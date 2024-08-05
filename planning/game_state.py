@@ -22,13 +22,28 @@ class GameState:
     @property
     def observation_size(self):
         return self._observation_size
+    
+    @property
+    def player_location(self):
+        return self._player_location
 
     def get_legal_actions(self) -> List[Action]:
-        forward_cell = self._observation[self._player_location[0]][self._player_location[1] + 1]
+        forward_cell = self._observation[self._player_location[0]][self._player_location[1] + 1] # TODO: Need to be according to the direction
         legal_actions = [Action.TURN_LEFT, Action.TURN_RIGHT]
         if forward_cell == 'wall':
             legal_actions.append(Action.MOVE_FORWARD)
         return legal_actions
+    
+    def generate_successor(self, action: Action) -> 'GameState':
+        # TODO: should change the player location accordingly
+        if action == Action.TURN_LEFT:
+            return
+        elif action == Action.TURN_RIGHT:
+            return
+        elif action == Action.MOVE_FORWARD:
+            return
+        else:
+            raise ValueError(f"Invalid action: {action}")
     
     def _translate_observation(self, raw_observation) -> None:
         processed_observation = []
