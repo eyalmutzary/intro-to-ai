@@ -1,23 +1,3 @@
-import abc
-import random
-from game_state import GameState
-
-class Agent:
-    def __init__(self, depth=2):
-        self.evaluation_function = None
-        self.depth = depth
-
-    @abc.abstractmethod
-    def get_action(self, game_state: GameState):
-        return
-
-
-class RandomAgent(Agent):
-    def get_action(self, game_state):
-        """
-        Returns a random action from the list of legal actions
-        """
-        return random.choice(game_state.get_legal_actions()).value
 
 # class AlphaBetaAgent(Agent):
 #     def get_action(self, game_state):
