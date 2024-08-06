@@ -8,6 +8,12 @@ class Action(Enum):
     TURN_RIGHT = 1
     MOVE_FORWARD = 2
 
+class Direction(Enum):
+    RIGHT = 0
+    DOWN = 1
+    LEFT = 2
+    UP = 3
+    
 
 class GameState:
     def __init__(self, raw_observation, player_location=None, player_direction=0):
@@ -70,11 +76,22 @@ class GameState:
         return (observation_size//2, 0)
     
     def get_forward_location(self):
-        if self._player_direction == 0: # right
+        if self._player_direction == Direction.RIGHT.value:
             return (self._player_location[0], self._player_location[1] + 1)
-        elif self._player_direction == 1: # down
+        elif self._player_direction == Direction.DOWN.value:
             return (self._player_location[0] + 1, self._player_location[1])
-        elif self._player_direction == 2: # left
+        elif self._player_direction == Direction.LEFT.value:
             return (self._player_location[0], self._player_location[1] - 1)
-        elif self._player_direction == 3: # up
+        elif self._player_direction == Direction.UP.value:
             return (self._player_location[0] - 1, self._player_location[1])
+        else:
+            raise ValueError(f"Invalid player direction: {self._player_direction}")
+        
+        
+    def __str__(self) -> str:
+        obs_map = ""
+        for row in self._observation:
+            obs_map += " ".join(row) + "\n"
+        direction_str = Direction(self._player_direction).name
+        return f"""Player location: {self._player_location}, Player direction: {direction_str}\n{obs_map}
+                """
