@@ -1,7 +1,7 @@
 import gymnasium as gym
 from minigrid.wrappers import RGBImgPartialObsWrapper, ImgObsWrapper, ViewSizeWrapper, SymbolicObsWrapper
 from game_state import GameState 
-from agents import RandomAgent, Agent
+from agents import RandomAgent, Agent, AlphaBetaAgent
 
 class Game:
     def init(self, agent, view_size=3):
@@ -32,7 +32,8 @@ class Game:
     
 if __name__ == "__main__":
     game = Game()
-    game.init(RandomAgent())
+    # game.init(RandomAgent())
+    game.init(AlphaBetaAgent())
     game.run()
     game.close()
     

@@ -11,14 +11,14 @@ class AlphaBetaAgent(Agent):
         MIN_AGENT = 1
         
         def alpha_beta(state: GameState, depth, alpha, beta, agent: int):
-            # If the depth is 0 or the current state is terminal
-            if depth == 0 or len(state.get_legal_actions(0)) == 0:
+            if depth == 0 or len(state.get_legal_actions()) == 0:
                 return self.evaluation_function(state)
+            
             if agent == MAX_AGENT:
                 best_value = float('-inf')
                 best_action = None
-                for action in state.get_legal_actions(agent):
-                    successor = state.generate_successor(agent, action)
+                for action in state.get_legal_actions():
+                    successor = state.generate_successor(action)
                     curr_value = alpha_beta(successor, depth - 1, alpha, beta, MIN_AGENT)
                     if curr_value > best_value:
                         best_value = curr_value
@@ -32,8 +32,8 @@ class AlphaBetaAgent(Agent):
                     return best_value
             else:  # Min player
                 best_value = float('inf')
-                for action in state.get_legal_actions(agent):
-                    successor = state.generate_successor(agent, action)
+                for action in state.get_legal_actions():
+                    successor = state.generate_successor(action)
                     curr_value = alpha_beta(successor, depth, alpha, beta, MAX_AGENT)
                     best_value = min(best_value, curr_value)
                     beta = min(beta, best_value)
@@ -41,7 +41,7 @@ class AlphaBetaAgent(Agent):
                         break  # cutoff
                 return best_value
             
-        return alpha_beta(game_state, self.depth, float('-inf'), float('inf'), MAX_AGENT)
+        return alpha_beta(game_state, self.depth, float('-inf'), float('inf'), MAX_AGENT).value
 
 
     # def get_state_representation(self, game_state):
