@@ -1,5 +1,5 @@
 import abc
-from game_state import GameState
+from game_state import GameState, Direction, eval_func_v1
 import random 
 
 class Agent:
@@ -12,5 +12,3 @@ class Agent:
         return
 
 
-def eval_func_v1(game_state: GameState):
-    return random.randint(0, 100)  # TODO: Implement a better evaluation function
