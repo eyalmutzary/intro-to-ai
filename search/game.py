@@ -35,7 +35,8 @@ class Game:
         
         i = 0
         while not done and i < len(moves):
-            state = GameState(self._translate_observation(observation['image']), observation['direction'])
+            game_map = self._translate_observation(observation['image'])
+            state = GameState(game_map, observation['direction'])
             observation, reward, terminated, truncated, info = self.env.step(moves[i].value)
             done = terminated or truncated
             i+= 1

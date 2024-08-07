@@ -1,8 +1,12 @@
 import util
 import time
+from typing import List, Tuple
 from problem import SearchProblem
+from state import GameState
+from constants import Action
 
-def depth_first_search(problem: SearchProblem):
+
+def depth_first_search(problem: SearchProblem) -> List[Action]:
     start = time.time()
     
     fringe = util.Stack()
@@ -24,7 +28,7 @@ def depth_first_search(problem: SearchProblem):
     return []
 
 
-def breadth_first_search(problem: SearchProblem):
+def breadth_first_search(problem: SearchProblem) -> List[Action]:
     """
     Search the shallowest nodes in the search tree first.
     """
@@ -57,7 +61,7 @@ class Node:
         self.state = state
         self.actions = actions
 
-def uniform_cost_search(problem: SearchProblem):
+def uniform_cost_search(problem: SearchProblem) -> List[Action]:
     """
     Search the node of least total cost first.
     """
@@ -68,7 +72,7 @@ def uniform_cost_search(problem: SearchProblem):
     visited = set()
 
     while not fringe.isEmpty():
-        current_node = fringe.pop()
+        current_node: Node = fringe.pop()
         state, actions = current_node.state, current_node.actions
 
         if problem.is_goal_state(state):
@@ -88,22 +92,18 @@ def uniform_cost_search(problem: SearchProblem):
     return []
 
 
-def null_heuristic(state, problem=None):
+def null_heuristic(state: GameState, problem=None) -> int:
     """
     A heuristic function estimates the cost from the current state to the nearest
     goal in the provided SearchProblem.  This heuristic is trivial.
     """
     return 0
 
-def improved_heuristic(state, problem=None):
-    """
-    A heuristic function estimates the cost from the current state to the nearest
-    goal in the provided SearchProblem.  This heuristic is trivial.
-    """
+def improved_heuristic(state: GameState, problem=None) -> int:
     return abs(state.player_location[0] - state.goal_location[0]) + abs(state.player_location[1] - state.goal_location[1])
 
 
-def a_star_search(problem: SearchProblem, heuristic=null_heuristic):
+def a_star_search(problem: SearchProblem, heuristic=null_heuristic) -> List[Action]:
     """
     Search the node that has the lowest combined cost and heuristic first.
     """

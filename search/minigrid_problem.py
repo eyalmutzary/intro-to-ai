@@ -1,3 +1,4 @@
+from typing import List
 from problem import SearchProblem
 from state import GameState
 from constants import Action
@@ -6,8 +7,7 @@ from constants import Action
 class MinigridProblem(SearchProblem):
     def __init__(self, initial_state: GameState):
         self.state = initial_state
-        # self.board = Board(board_w, board_h, 1, piece_list, starting_point)
-        # self.expanded = 0
+        
 
     def get_start_state(self):
         """
@@ -25,7 +25,7 @@ class MinigridProblem(SearchProblem):
             
 
 
-    def get_successors(self, state: GameState):
+    def get_successors(self, state: GameState) -> List[GameState]:
         """
         state: Search state
 
@@ -50,7 +50,7 @@ class MinigridProblem(SearchProblem):
         This method returns the total cost of a particular sequence of actions.  The sequence must
         be composed of legal moves
         """
-        # count left and right as 2 moves
+        # count left and right as 2 moves (rotate & move forward)
         cost = 0
         for action in actions:
             if action in [Action.TURN_LEFT, Action.TURN_RIGHT]:

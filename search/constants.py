@@ -20,3 +20,12 @@ class Direction(Enum):
     UP = 3
     
 BLOCKED_CELLS = ['wall', 'lava']
+
+
+# Used to rotate the player in the grid
+DIRECTION_VECTORS = {
+    Direction.RIGHT.value: (0, 1),
+    Direction.DOWN.value: (1, 0),
+    Direction.LEFT.value: (0, -1),
+    Direction.UP.value: (-1, 0)
+}
