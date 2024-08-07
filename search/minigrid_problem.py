@@ -1,5 +1,6 @@
 from problem import SearchProblem
-from state import Action, GameState
+from state import GameState
+from constants import Action
 
 
 class MinigridProblem(SearchProblem):

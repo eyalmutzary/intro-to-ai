@@ -6,19 +6,12 @@ from typing import List
 from minigrid.core.constants import IDX_TO_OBJECT
 from minigrid_problem import MinigridProblem
 from search_algorithms import depth_first_search, breadth_first_search, uniform_cost_search, a_star_search, improved_heuristic
-from state import Action
+from constants import Action, GAME_MAPS
 
-Enviroments = [
-    'MiniGrid-Empty-8x8-v0',
-    'MiniGrid-Empty-16x16-v0',
-    'MiniGrid-Empty-Random-6x6-v0',
-    'MiniGrid-LavaGapS7-v0',
-    'MiniGrid-DistShift2-v0',
-]
 
 class Game:
     def __init__(self):
-        self.env = gym.make(Enviroments[4], render_mode="human")
+        self.env = gym.make(GAME_MAPS[4], render_mode="human")
         self.env = SymbolicObsWrapper(self.env)
 
         
@@ -39,7 +32,6 @@ class Game:
             moves.append(action)
             if action in [Action.TURN_LEFT, Action.TURN_RIGHT]:
                 moves.append(Action.MOVE_FORWARD)
-        print(len(moves))
         
         i = 0
         while not done and i < len(moves):

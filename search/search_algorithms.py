@@ -1,6 +1,6 @@
 import util
-from problem import SearchProblem
 import time
+from problem import SearchProblem
 
 def depth_first_search(problem: SearchProblem):
     start = time.time()

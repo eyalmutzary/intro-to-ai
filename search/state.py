@@ -2,20 +2,8 @@
 from enum import Enum
 from typing import List, Tuple
 import copy
+from constants import BLOCKED_CELLS, Direction, Action
 
-
-class Action(Enum):
-    TURN_LEFT = 0
-    TURN_RIGHT = 1
-    MOVE_FORWARD = 2
-
-class Direction(Enum):
-    RIGHT = 0
-    DOWN = 1
-    LEFT = 2
-    UP = 3
-    
-BLOCKED_CELLS = ['wall', 'lava']
 
 class GameState:
     def __init__(self, observation, goal_location, player_direction=Direction.RIGHT.value):
