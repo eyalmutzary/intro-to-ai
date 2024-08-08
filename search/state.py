@@ -5,11 +5,15 @@ from constants import BLOCKED_CELLS, Direction, Action, DIRECTION_VECTORS
 from collections import deque
 
 class GameState:
-    def __init__(self, game_map, player_direction=Direction.RIGHT.value):
+    def __init__(self, game_map, player_direction=Direction.RIGHT.value, is_picked_key=False, goal_name=None, goal_location=None):
+        player_location = GameState._get_player_location(game_map)
+        if not goal_name or not goal_location:
+            goal_name, goal_location = GameState._find_next_target(game_map, player_location, is_picked_key)
+        
         self._game_map = game_map
         self._player_direction: int = player_direction 
-        self._player_location: Tuple[int, int] = self._get_player_location()
-        goal_name, goal_location = self._find_next_target(self._game_map)
+        self._player_location: Tuple[int, int] = player_location
+        self._is_picked_key = is_picked_key
         self._goal_location = goal_location
         self._goal_name = goal_name
 
@@ -36,29 +40,48 @@ class GameState:
     def get_legal_actions(self) -> List[Action]:        
         legal_actions = []
 
-        if self._is_cell_free(self._get_new_location(self._player_direction)):
+        forward_row, forward_col = self._get_new_location(self._player_direction)
+        if self._is_cell_free((forward_row, forward_col)):
             legal_actions.append(Action.MOVE_FORWARD)
-
+            
         if self._is_cell_free(self._get_new_location(self._get_rotated_direction(Action.TURN_RIGHT))):
             legal_actions.append(Action.TURN_RIGHT)
 
         if self._is_cell_free(self._get_new_location(self._get_rotated_direction(Action.TURN_LEFT))):
             legal_actions.append(Action.TURN_LEFT)
 
+        if self._game_map[forward_row][forward_col] == 'key':
+            legal_actions.append(Action.PICKUP)
+        
+        if self._game_map[forward_row][forward_col] == 'door':
+            legal_actions.append(Action.TOGGLE)
+        
         return legal_actions
     
     def generate_successor(self, action: Action):
         succ_new_direction = self._player_direction
         if action in [Action.TURN_LEFT, Action.TURN_RIGHT]:
             succ_new_direction = self._get_rotated_direction(action)
-            
-        succ = GameState(copy.deepcopy(self._game_map), succ_new_direction) 
+        
+        succ_is_picked_key = self._is_picked_key
+        if action == Action.PICKUP:
+            succ_is_picked_key = True
+        
+        if action == Action.TOGGLE:
+            succ_is_picked_key = False # ! might cause a bug in case of multiple doors and keys of different colors 
+        
+        succ = GameState(copy.deepcopy(self._game_map),
+                        succ_new_direction, 
+                        is_picked_key=succ_is_picked_key,
+                        goal_name=self._goal_name,
+                        goal_location=self._goal_location
+                        ) 
         succ._move_player_forward()
-
         return succ
     
-    def _get_player_location(self) -> Tuple[int, int]:
-        for i, row in enumerate(self._game_map):
+    @staticmethod
+    def _get_player_location(game_map: List[List[str]]) -> Tuple[int, int]:
+        for i, row in enumerate(game_map):
             for j, cell in enumerate(row):
                 if cell == 'agent':
                     return (i, j)
@@ -87,12 +110,13 @@ class GameState:
         row, col = location
         return self._game_map[row][col] not in BLOCKED_CELLS
     
-    def _find_next_target(self, observation: List[List[str]]) -> tuple:
-        rows, cols = len(observation), len(observation[0])
+    @staticmethod
+    def _find_next_target(game_map: List[List[str]], player_location, is_picked_key) -> tuple:
+        rows, cols = len(game_map), len(game_map[0])
         directions = [(0, 1), (1, 0), (0, -1), (-1, 0)]  # Right, Down, Left, Up
-        queue = deque([self._player_location])
+        queue = deque([player_location])
         visited = set()
-        visited.add(self._player_location)
+        visited.add(player_location)
         
         found_goal = None
         found_key = None
@@ -102,11 +126,11 @@ class GameState:
             r, c = queue.popleft()
             
             # Check and mark if we found any of the targets
-            if observation[r][c] == 'goal':
+            if game_map[r][c] == 'goal':
                 found_goal = (r, c)
-            elif observation[r][c] == 'key':
+            elif game_map[r][c] == 'key':
                 found_key = (r, c)
-            elif observation[r][c] == 'door':
+            elif game_map[r][c] == 'door':
                 found_door = (r, c)
             
             # Explore neighbors
@@ -114,8 +138,8 @@ class GameState:
                 nr, nc = r + dr, c + dc
                 
                 # Check if the neighbor is within bounds and is not a wall or visited
-                if 0 <= nr < rows and 0 <= nc < cols and observation[nr][nc] not in ['wall', 'lava'] and (nr, nc) not in visited:
-                    if observation[nr][nc] == 'door': # a door could be a target, but it should not be passable
+                if 0 <= nr < rows and 0 <= nc < cols and game_map[nr][nc] not in ['wall', 'lava'] and (nr, nc) not in visited:
+                    if game_map[nr][nc] == 'door': # a door could be a target, but it should not be passable
                         found_door = (nr, nc)
                         continue
                     visited.add((nr, nc))
@@ -124,12 +148,12 @@ class GameState:
         # Return based on priority
         if found_goal:
             return ('goal', found_goal)
-        elif found_key:
+        elif found_key and not is_picked_key:
             return ('key', found_key)
-        elif found_door:
+        elif found_door and is_picked_key:
             return ('door', found_door)
         else:
-            return None
+            raise ValueError("No target found in the current game state:" + str(game_map))
     
     
     def __str__(self) -> str:

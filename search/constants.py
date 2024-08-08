@@ -12,6 +12,8 @@ class Action(Enum):
     TURN_LEFT = 0
     TURN_RIGHT = 1
     MOVE_FORWARD = 2
+    PICKUP = 3
+    TOGGLE = 5
 
 class Direction(Enum):
     RIGHT = 0

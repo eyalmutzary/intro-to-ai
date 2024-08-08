@@ -14,7 +14,7 @@ from maps.door_simple import DoorSimple
 
 class Game:
     def __init__(self):
-        # self.env = gym.make(GAME_MAPS[4], render_mode="human")
+        # self.env = gym.make("MiniGrid-ObstructedMaze-Full-v0", render_mode="human")
         self.env = DoorSimple(render_mode="human")
         self.env = SymbolicObsWrapper(self.env)
 
@@ -22,23 +22,24 @@ class Game:
     def run(self):
         observation, info = self.env.reset()
         done = False
-        
+        last_target = None
         # path = depth_first_search(problem)
         # path = breadth_first_search(problem)
         # path = uniform_cost_search(problem)
         while not done:
             game_map = self._translate_observation(observation['image'])
-            state = GameState(game_map, observation['direction'])
+            state = GameState(game_map, observation['direction'], is_picked_key=last_target=='key')
             problem = MinigridProblem(state)
             
             path = a_star_search(problem, improved_heuristic)
-            moves = self._search_path_to_moves(path, state.goal_name)
+            moves = self._convert_search_path_to_moves(path, state.goal_name)
                         
             i = 0
             while i < len(moves):
                 observation, reward, terminated, truncated, info = self.env.step(moves[i])
                 done = terminated or truncated
                 i+= 1
+            last_target = state.goal_name
         self.close()
     
     def reset(self):
@@ -61,18 +62,16 @@ class Game:
                 translated_image[i].append(val)
         return translated_image
     
-    def _search_path_to_moves(self, path: List[Action], goal_name: str) -> List[int]:
+    def _convert_search_path_to_moves(self, path: List[Action], goal_name: str) -> List[int]:
         moves = []
         for action in path:
             moves.append(action.value)
             if action in [Action.TURN_LEFT, Action.TURN_RIGHT]:
                 moves.append(Action.MOVE_FORWARD.value)
                 
-        current_goal_name = goal_name
-        if current_goal_name == 'door':
-            moves.append(5)
-        elif current_goal_name == 'key':
-            moves.append(3)
+        if goal_name == 'door':
+            moves.append(Action.MOVE_FORWARD.value) # enter the door after openning it
+
         return moves
     
 if __name__ == "__main__":
