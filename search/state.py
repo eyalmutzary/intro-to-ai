@@ -150,7 +150,7 @@ class GameState:
             return ('goal', found_goal)
         elif found_key and not is_picked_key:
             return ('key', found_key)
-        elif found_door and is_picked_key:
+        elif found_door:
             return ('door', found_door)
         else:
             raise ValueError("No target found in the current game state:" + str(game_map))
