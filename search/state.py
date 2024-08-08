@@ -5,17 +5,18 @@ from constants import BLOCKED_CELLS, Direction, Action, DIRECTION_VECTORS
 from collections import deque
 
 class GameState:
-    def __init__(self, game_map, player_direction=Direction.RIGHT.value, is_picked_key=False, goal_name=None, goal_location=None):
+    def __init__(self, game_map, player_direction=Direction.RIGHT.value, is_picked_key=False, goal_name=None, goal_location=None, visited_locations=[]):
         player_location = GameState._get_player_location(game_map)
         if not goal_name or not goal_location:
-            goal_name, goal_location = GameState._find_next_target(game_map, player_location, is_picked_key)
-        
+            goal_name, goal_location = GameState._find_next_target(game_map, player_location, is_picked_key, visited_locations)
+
         self._game_map = game_map
         self._player_direction: int = player_direction 
         self._player_location: Tuple[int, int] = player_location
         self._is_picked_key = is_picked_key
         self._goal_location = goal_location
         self._goal_name = goal_name
+        self._visited_locations: List[Tuple[int,int]] = visited_locations
 
     @property
     def game_map(self):
@@ -55,6 +56,7 @@ class GameState:
         
         if self._game_map[forward_row][forward_col] == 'door':
             legal_actions.append(Action.TOGGLE)
+            self._visited_locations.append((forward_row, forward_col))
         
         return legal_actions
     
@@ -111,11 +113,11 @@ class GameState:
         return self._game_map[row][col] not in BLOCKED_CELLS
     
     @staticmethod
-    def _find_next_target(game_map: List[List[str]], player_location, is_picked_key) -> tuple:
+    def _find_next_target(game_map: List[List[str]], player_location, is_picked_key, visited_locations: List[Tuple[int,int]]) -> tuple:
         rows, cols = len(game_map), len(game_map[0])
         directions = [(0, 1), (1, 0), (0, -1), (-1, 0)]  # Right, Down, Left, Up
         queue = deque([player_location])
-        visited = set()
+        visited = set(visited_locations)
         visited.add(player_location)
         
         found_goal = None

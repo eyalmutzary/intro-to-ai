@@ -100,6 +100,7 @@ def null_heuristic(state: GameState, problem=None) -> int:
     return 0
 
 def improved_heuristic(state: GameState, problem=None) -> int:
+    # TODO: an idea: make a target reduction - in case there is only one way to reach the goal, reduce the target to the next cell    
     return abs(state.player_location[0] - state.goal_location[0]) + abs(state.player_location[1] - state.goal_location[1])
 
 

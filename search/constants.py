@@ -13,6 +13,7 @@ class Action(Enum):
     TURN_RIGHT = 1
     MOVE_FORWARD = 2
     PICKUP = 3
+    DROP = 4
     TOGGLE = 5
 
 class Direction(Enum):
@@ -21,7 +22,7 @@ class Direction(Enum):
     LEFT = 2
     UP = 3
     
-BLOCKED_CELLS = ['wall', 'lava']
+BLOCKED_CELLS = ['wall', 'lava', 'key']
 
 
 # Used to rotate the player in the grid

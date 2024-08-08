@@ -9,13 +9,11 @@ from minigrid.core.constants import IDX_TO_OBJECT
 from minigrid_problem import MinigridProblem
 from search_algorithms import depth_first_search, breadth_first_search, uniform_cost_search, a_star_search, improved_heuristic
 from constants import Action, GAME_MAPS
-from maps.maze import MazeEnv
-from maps.door_simple import DoorSimple
+import maps
 
 class Game:
-    def __init__(self):
-        # self.env = gym.make("MiniGrid-ObstructedMaze-Full-v0", render_mode="human")
-        self.env = DoorSimple(render_mode="human")
+    def __init__(self, env):
+        self.env = env
         self.env = SymbolicObsWrapper(self.env)
 
         
@@ -33,7 +31,7 @@ class Game:
             
             path = a_star_search(problem, improved_heuristic)
             moves = self._convert_search_path_to_moves(path, state.goal_name)
-                        
+            
             i = 0
             while i < len(moves):
                 observation, reward, terminated, truncated, info = self.env.step(moves[i])
@@ -64,18 +62,27 @@ class Game:
     
     def _convert_search_path_to_moves(self, path: List[Action], goal_name: str) -> List[int]:
         moves = []
-        for action in path:
+        for i, action in enumerate(path):
             moves.append(action.value)
             if action in [Action.TURN_LEFT, Action.TURN_RIGHT]:
                 moves.append(Action.MOVE_FORWARD.value)
+            if action == Action.PICKUP and i < len(path) - 1: # edge case where doing pickup when the goal is not a key
+                moves.append(Action.MOVE_FORWARD.value)
                 
+        if goal_name == 'key':
+            moves.append(Action.PICKUP.value)
+        
         if goal_name == 'door':
             moves.append(Action.MOVE_FORWARD.value) # enter the door after openning it
+            moves.append(Action.MOVE_FORWARD.value) # drop the used key next to the door
+            moves.append(Action.TURN_RIGHT.value)
+            moves.append(Action.DROP.value)
 
         return moves
     
 if __name__ == "__main__":
-    game = Game()
+    # env = gym.make("MiniGrid-ObstructedMaze-Full-v0", render_mode="human")
+    game = Game(env=maps.DoorsV3Env(render_mode="human"))
     game.run()
     game.close()
     
