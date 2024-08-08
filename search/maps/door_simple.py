@@ -51,7 +51,7 @@ class DoorSimple(MiniGridEnv):
         # Place the door and key
         self.grid.set(5, 6, Door(COLOR_NAMES[0], is_locked=True))
         self.grid.set(3, 6, Key(COLOR_NAMES[0]))
-
+        
         # Place a goal square in the bottom-right corner
         self.put_obj(Goal(), width - 2, height - 2)
 

@@ -1,8 +1,10 @@
+from collections import deque
+from time import sleep
+from typing import List, Tuple
 import gymnasium as gym
+
 from minigrid.wrappers import RGBImgPartialObsWrapper, ImgObsWrapper, ViewSizeWrapper, SymbolicObsWrapper
 from state import GameState 
-from time import sleep
-from typing import List
 from minigrid.core.constants import IDX_TO_OBJECT
 from minigrid_problem import MinigridProblem
 from search_algorithms import depth_first_search, breadth_first_search, uniform_cost_search, a_star_search, improved_heuristic
@@ -21,9 +23,9 @@ class Game:
         observation, info = self.env.reset()
         done = False
         game_map = self._translate_observation(observation['image'])
-        state = GameState(game_map, self._find_goal_location(game_map), observation['direction'])
+        state = GameState(game_map, self._find_next_target(game_map)[1], observation['direction'])
         problem = MinigridProblem(state)
-        
+        # print(state)
         # path = depth_first_search(problem)
         # path = breadth_first_search(problem)
         # path = uniform_cost_search(problem)
@@ -40,7 +42,7 @@ class Game:
         i = 0
         while not done and i < len(moves):
             game_map = self._translate_observation(observation['image'])
-            state = GameState(game_map, observation['direction'])
+            state = GameState(game_map, self._find_next_target(game_map)[1],observation['direction'])
             observation, reward, terminated, truncated, info = self.env.step(moves[i].value)
             done = terminated or truncated
             i+= 1
@@ -66,12 +68,59 @@ class Game:
                 translated_image[i].append(val)
         return translated_image
     
-    def _find_goal_location(self, observation: List[List[str]]) -> tuple:
+
+    def _find_next_target(self, observation: List[List[str]]) -> tuple:
+        # find the location of 'agent'
         for i, row in enumerate(observation):
             for j, cell in enumerate(row):
-                if cell == 'goal':
-                    return (i, j)
-        return None
+                if cell == 'agent':
+                    start = (i, j)
+                    break
+        if start is None:
+            raise ValueError("Player location not found in game map")
+        
+        rows, cols = len(observation), len(observation[0])
+        directions = [(0, 1), (1, 0), (0, -1), (-1, 0)]  # Right, Down, Left, Up
+        queue = deque([start])
+        visited = set()
+        visited.add(start)
+        
+        found_goal = None
+        found_key = None
+        found_door = None
+        
+        while queue:
+            r, c = queue.popleft()
+            
+            # Check and mark if we found any of the targets
+            if observation[r][c] == 'goal':
+                found_goal = (r, c)
+            elif observation[r][c] == 'key':
+                found_key = (r, c)
+            elif observation[r][c] == 'door':
+                found_door = (r, c)
+            
+            # Explore neighbors
+            for dr, dc in directions:
+                nr, nc = r + dr, c + dc
+                
+                # Check if the neighbor is within bounds and is not a wall or visited
+                if 0 <= nr < rows and 0 <= nc < cols and observation[nr][nc] not in ['wall', 'lava'] and (nr, nc) not in visited:
+                    if observation[nr][nc] == 'door': # a door could be a target, but it should not be passable
+                        found_door = (nr, nc)
+                        continue
+                    visited.add((nr, nc))
+                    queue.append((nr, nc))
+        
+        # Return based on priority
+        if found_goal:
+            return ('goal', found_goal)
+        elif found_key:
+            return ('key', found_key)
+        elif found_door:
+            return ('door', found_door)
+        else:
+            return None
     
     
     
