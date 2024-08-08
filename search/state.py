@@ -2,13 +2,16 @@ from enum import Enum
 from typing import List, Tuple
 import copy
 from constants import BLOCKED_CELLS, Direction, Action, DIRECTION_VECTORS
+from collections import deque
 
 class GameState:
-    def __init__(self, game_map, goal_location, player_direction=Direction.RIGHT.value):
+    def __init__(self, game_map, player_direction=Direction.RIGHT.value):
         self._game_map = game_map
         self._player_direction: int = player_direction 
-        self._goal_location = goal_location
         self._player_location: Tuple[int, int] = self._get_player_location()
+        goal_name, goal_location = self._find_next_target(self._game_map)
+        self._goal_location = goal_location
+        self._goal_name = goal_name
 
     @property
     def game_map(self):
@@ -19,12 +22,16 @@ class GameState:
         return self._player_direction
     
     @property
-    def goal_location(self):
-        return self._goal_location
-    
-    @property
     def player_location(self):
         return self._player_location
+    
+    @property
+    def goal_location(self):
+        return self._goal_location
+
+    @property
+    def goal_name(self):
+        return self._goal_name
 
     def get_legal_actions(self) -> List[Action]:        
         legal_actions = []
@@ -45,7 +52,7 @@ class GameState:
         if action in [Action.TURN_LEFT, Action.TURN_RIGHT]:
             succ_new_direction = self._get_rotated_direction(action)
             
-        succ = GameState(copy.deepcopy(self._game_map), self._goal_location, succ_new_direction) 
+        succ = GameState(copy.deepcopy(self._game_map), succ_new_direction) 
         succ._move_player_forward()
 
         return succ
@@ -79,6 +86,51 @@ class GameState:
     def _is_cell_free(self, location: Tuple[int, int]) -> bool:
         row, col = location
         return self._game_map[row][col] not in BLOCKED_CELLS
+    
+    def _find_next_target(self, observation: List[List[str]]) -> tuple:
+        rows, cols = len(observation), len(observation[0])
+        directions = [(0, 1), (1, 0), (0, -1), (-1, 0)]  # Right, Down, Left, Up
+        queue = deque([self._player_location])
+        visited = set()
+        visited.add(self._player_location)
+        
+        found_goal = None
+        found_key = None
+        found_door = None
+        
+        while queue:
+            r, c = queue.popleft()
+            
+            # Check and mark if we found any of the targets
+            if observation[r][c] == 'goal':
+                found_goal = (r, c)
+            elif observation[r][c] == 'key':
+                found_key = (r, c)
+            elif observation[r][c] == 'door':
+                found_door = (r, c)
+            
+            # Explore neighbors
+            for dr, dc in directions:
+                nr, nc = r + dr, c + dc
+                
+                # Check if the neighbor is within bounds and is not a wall or visited
+                if 0 <= nr < rows and 0 <= nc < cols and observation[nr][nc] not in ['wall', 'lava'] and (nr, nc) not in visited:
+                    if observation[nr][nc] == 'door': # a door could be a target, but it should not be passable
+                        found_door = (nr, nc)
+                        continue
+                    visited.add((nr, nc))
+                    queue.append((nr, nc))
+        
+        # Return based on priority
+        if found_goal:
+            return ('goal', found_goal)
+        elif found_key:
+            return ('key', found_key)
+        elif found_door:
+            return ('door', found_door)
+        else:
+            return None
+    
     
     def __str__(self) -> str:
         obs_map = ""

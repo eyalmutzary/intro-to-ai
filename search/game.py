@@ -22,30 +22,23 @@ class Game:
     def run(self):
         observation, info = self.env.reset()
         done = False
-        game_map = self._translate_observation(observation['image'])
-        state = GameState(game_map, self._find_next_target(game_map)[1], observation['direction'])
-        problem = MinigridProblem(state)
-        # print(state)
+        
         # path = depth_first_search(problem)
         # path = breadth_first_search(problem)
         # path = uniform_cost_search(problem)
-        path = a_star_search(problem, improved_heuristic)
-        
-        moves = []
-        for action in path:
-            moves.append(action)
-            if action in [Action.TURN_LEFT, Action.TURN_RIGHT]:
-                moves.append(Action.MOVE_FORWARD)
-        
-        # moves = [2,2,1,2,2,2,2,3,2,0,2,5,2,2,2,2,1,2]
-        
-        i = 0
-        while not done and i < len(moves):
+        while not done:
             game_map = self._translate_observation(observation['image'])
-            state = GameState(game_map, self._find_next_target(game_map)[1],observation['direction'])
-            observation, reward, terminated, truncated, info = self.env.step(moves[i].value)
-            done = terminated or truncated
-            i+= 1
+            state = GameState(game_map, observation['direction'])
+            problem = MinigridProblem(state)
+            
+            path = a_star_search(problem, improved_heuristic)
+            moves = self._search_path_to_moves(path, state.goal_name)
+                        
+            i = 0
+            while i < len(moves):
+                observation, reward, terminated, truncated, info = self.env.step(moves[i])
+                done = terminated or truncated
+                i+= 1
         self.close()
     
     def reset(self):
@@ -68,61 +61,19 @@ class Game:
                 translated_image[i].append(val)
         return translated_image
     
-
-    def _find_next_target(self, observation: List[List[str]]) -> tuple:
-        # find the location of 'agent'
-        for i, row in enumerate(observation):
-            for j, cell in enumerate(row):
-                if cell == 'agent':
-                    start = (i, j)
-                    break
-        if start is None:
-            raise ValueError("Player location not found in game map")
-        
-        rows, cols = len(observation), len(observation[0])
-        directions = [(0, 1), (1, 0), (0, -1), (-1, 0)]  # Right, Down, Left, Up
-        queue = deque([start])
-        visited = set()
-        visited.add(start)
-        
-        found_goal = None
-        found_key = None
-        found_door = None
-        
-        while queue:
-            r, c = queue.popleft()
-            
-            # Check and mark if we found any of the targets
-            if observation[r][c] == 'goal':
-                found_goal = (r, c)
-            elif observation[r][c] == 'key':
-                found_key = (r, c)
-            elif observation[r][c] == 'door':
-                found_door = (r, c)
-            
-            # Explore neighbors
-            for dr, dc in directions:
-                nr, nc = r + dr, c + dc
+    def _search_path_to_moves(self, path: List[Action], goal_name: str) -> List[int]:
+        moves = []
+        for action in path:
+            moves.append(action.value)
+            if action in [Action.TURN_LEFT, Action.TURN_RIGHT]:
+                moves.append(Action.MOVE_FORWARD.value)
                 
-                # Check if the neighbor is within bounds and is not a wall or visited
-                if 0 <= nr < rows and 0 <= nc < cols and observation[nr][nc] not in ['wall', 'lava'] and (nr, nc) not in visited:
-                    if observation[nr][nc] == 'door': # a door could be a target, but it should not be passable
-                        found_door = (nr, nc)
-                        continue
-                    visited.add((nr, nc))
-                    queue.append((nr, nc))
-        
-        # Return based on priority
-        if found_goal:
-            return ('goal', found_goal)
-        elif found_key:
-            return ('key', found_key)
-        elif found_door:
-            return ('door', found_door)
-        else:
-            return None
-    
-    
+        current_goal_name = goal_name
+        if current_goal_name == 'door':
+            moves.append(5)
+        elif current_goal_name == 'key':
+            moves.append(3)
+        return moves
     
 if __name__ == "__main__":
     game = Game()
