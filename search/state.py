@@ -1,4 +1,3 @@
-from enum import Enum
 from typing import List, Tuple
 import copy
 from constants import BLOCKED_CELLS, Direction, Action, DIRECTION_VECTORS
@@ -10,12 +9,12 @@ class GameState:
         if not goal_name or not goal_location:
             goal_name, goal_location = GameState._find_next_target(game_map, player_location, is_picked_key, visited_locations)
 
-        self._game_map = game_map
+        self._game_map: List[List[str]] = game_map
         self._player_direction: int = player_direction 
         self._player_location: Tuple[int, int] = player_location
-        self._is_picked_key = is_picked_key
-        self._goal_location = goal_location
-        self._goal_name = goal_name
+        self._is_picked_key: bool = is_picked_key
+        self._goal_location: Tuple[int,int] = goal_location
+        self._goal_name: str = goal_name
         self._visited_locations: List[Tuple[int,int]] = visited_locations
 
     @property
@@ -39,6 +38,10 @@ class GameState:
         return self._goal_name
 
     def get_legal_actions(self) -> List[Action]:        
+        """
+            Checks if can move forward, turn left, turn right.
+            Also, if there is a key or a door in front of the player.
+        """
         legal_actions = []
 
         forward_row, forward_col = self._get_new_location(self._player_direction)
@@ -105,15 +108,26 @@ class GameState:
         self._player_location = (new_row, new_col)
 
     def _get_new_location(self, direction: int) -> Tuple[int, int]:
+        """
+            Returns the new location of the player after moving in the given direction.
+        """
         row_offset, col_offset = DIRECTION_VECTORS[direction]
         return (self._player_location[0] + row_offset, self._player_location[1] + col_offset)
 
     def _is_cell_free(self, location: Tuple[int, int]) -> bool:
+        """
+            Checks if the specified location is free to move to (Not in the BLOCKED_CELLS list)
+        """
         row, col = location
         return self._game_map[row][col] not in BLOCKED_CELLS
     
     @staticmethod
     def _find_next_target(game_map: List[List[str]], player_location, is_picked_key, visited_locations: List[Tuple[int,int]]) -> tuple:
+        """
+            Looking for the next target to reach in the game map.
+            The priorities are: Goal > Key > Door
+        """
+        
         rows, cols = len(game_map), len(game_map[0])
         directions = [(0, 1), (1, 0), (0, -1), (-1, 0)]  # Right, Down, Left, Up
         queue = deque([player_location])
