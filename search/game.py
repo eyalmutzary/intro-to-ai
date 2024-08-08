@@ -7,11 +7,13 @@ from minigrid.core.constants import IDX_TO_OBJECT
 from minigrid_problem import MinigridProblem
 from search_algorithms import depth_first_search, breadth_first_search, uniform_cost_search, a_star_search, improved_heuristic
 from constants import Action, GAME_MAPS
-
+from maps.maze import MazeEnv
+from maps.door_simple import DoorSimple
 
 class Game:
     def __init__(self):
-        self.env = gym.make(GAME_MAPS[4], render_mode="human")
+        # self.env = gym.make(GAME_MAPS[4], render_mode="human")
+        self.env = DoorSimple(render_mode="human")
         self.env = SymbolicObsWrapper(self.env)
 
         
@@ -32,6 +34,8 @@ class Game:
             moves.append(action)
             if action in [Action.TURN_LEFT, Action.TURN_RIGHT]:
                 moves.append(Action.MOVE_FORWARD)
+        
+        # moves = [2,2,1,2,2,2,2,3,2,0,2,5,2,2,2,2,1,2]
         
         i = 0
         while not done and i < len(moves):
