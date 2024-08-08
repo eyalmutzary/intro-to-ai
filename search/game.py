@@ -1,5 +1,3 @@
-from collections import deque
-from time import sleep
 from typing import List, Tuple
 import gymnasium as gym
 
@@ -7,7 +5,7 @@ from minigrid.wrappers import RGBImgPartialObsWrapper, ImgObsWrapper, ViewSizeWr
 from state import GameState 
 from minigrid.core.constants import IDX_TO_OBJECT
 from minigrid_problem import MinigridProblem
-from search_algorithms import depth_first_search, breadth_first_search, uniform_cost_search, a_star_search, improved_heuristic
+from search_algorithms import a_star_search, improved_heuristic
 from constants import Action, GAME_MAPS
 import maps
 
@@ -21,9 +19,7 @@ class Game:
         observation, info = self.env.reset()
         done = False
         last_target = None
-        # path = depth_first_search(problem)
-        # path = breadth_first_search(problem)
-        # path = uniform_cost_search(problem)
+        
         while not done:
             game_map = self._translate_observation(observation['image'])
             state = GameState(game_map, observation['direction'], is_picked_key=last_target=='key')
