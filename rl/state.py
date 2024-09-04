@@ -8,7 +8,6 @@ class GameState:
         player_location = GameState._get_player_location(game_map)
         if not goal_name or not goal_location:
             goal_name, goal_location = GameState._find_next_target(game_map, player_location, is_picked_key, visited_locations)
-
         self._game_map: List[List[str]] = game_map
         self._player_direction: int = player_direction 
         self._player_location: Tuple[int, int] = player_location
