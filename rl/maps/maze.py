@@ -129,6 +129,7 @@ class MazeEnv(MiniGridEnv):
         if self.step_count >= self.max_steps:
             truncated = True
 
+
         if self.render_mode == "human":
             self.render()
 

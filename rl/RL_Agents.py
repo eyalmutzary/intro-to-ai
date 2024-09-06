@@ -16,7 +16,7 @@ class PlayerMode(Enum):
 
 
 class QLearningAgent:
-    def __init__(self, env, gamma=0.9, epsilon=1.0, epsilon_min=0.01, epsilon_decay=0.99, alpha=0.05, policy_file=None):
+    def __init__(self, env, gamma=0.8, epsilon=1.0, epsilon_min=0.01, epsilon_decay=0.995, alpha=0.15, policy_file=None):
         self.env = env
         self.visited_states = set()
         self.gamma = gamma
@@ -45,6 +45,11 @@ class QLearningAgent:
                 action = self.env.action_space.sample()
             else:
                 action, value = util.get_max_action(state, self.q_value_function, self.env)
+                if value == 0:
+                    if False in self.visited_actions[state]:
+                        action = self.visited_actions[state].index(False)
+                    else:
+                        action = self.env.action_space.sample()
         else:
             action = self.policy[state]
             if action == -1:
@@ -79,8 +84,9 @@ class QLearningAgent:
                 next_observation, reward, terminated, truncated, _ = self.env.step(action)
                 current_length += 1
                 if terminated:
-                    print (f"reached the goal with {current_length} steps at iter: {e}")
-                # next_state = str(self.env)
+                    print(f"reached the goal with {current_length} steps at iter: {e}, and reward: {reward}")
+                if truncated:
+                    print(f"truncated with {current_length} steps at iter: {e}, and reward: {reward}")
                 next_state = self.translate_state(next_observation)
                 done = terminated or truncated
                 self.update_q_table(state, action, reward, next_state)
