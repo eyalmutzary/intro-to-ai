@@ -22,7 +22,7 @@ class Direction(Enum):
     LEFT = 2
     UP = 3
     
-BLOCKED_CELLS = ['wall', 'lava', 'key']
+BLOCKED_CELLS = ['wall', 'key']
 
 
 # Used to rotate the player in the grid

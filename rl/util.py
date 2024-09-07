@@ -493,11 +493,12 @@ class TimeoutFunction:
         signal.alarm(0)
         return result
 # get action with max q value function
-def get_max_action(state, q_value_function, maze_env):
+def get_max_action(state, q_value_function):
+    legal_actions = state.get_legal_actions()
     max_action = None
     max_q_value = -float('inf')
-    for action in range(maze_env.action_space.n):
-        current_q_value = q_value_function[(state, action)]
+    for action in legal_actions:
+        current_q_value = q_value_function[(state, action.value)]
         if current_q_value > max_q_value:
             max_q_value = current_q_value
             max_action = action

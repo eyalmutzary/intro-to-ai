@@ -8,7 +8,6 @@ import numpy as np
 from gymnasium import logger, spaces
 from gymnasium.core import ActionWrapper, ObservationWrapper, ObsType, Wrapper, ActType, WrapperActType
 
-
 from minigrid.core.constants import COLOR_TO_IDX, OBJECT_TO_IDX, STATE_TO_IDX
 from minigrid.core.world_object import Goal
 
@@ -51,9 +50,9 @@ class CustomMinigridWrapper(ObservationWrapper):
 
         return obs
 
-    def reward(self, reward):
-        # Custom reward function: Encouraging fewer steps to reach the goal
-        return 1 - 0.9 * (self.step_count / self.max_steps)
+    # def reward(self, reward):
+    #     # Custom reward function: Encouraging fewer steps to reach the goal
+    #     return 1 - 0.9 * (self.step_count / self.max_steps)
 
     def step(self, action):
         """
@@ -76,11 +75,9 @@ class CustomMinigridWrapper(ObservationWrapper):
         else:
             # If the action is not a turn (it's just moving forward or something else), act normally
             next_observation, total_reward, terminated, truncated, info = self.env.step(action)
-
-        return next_observation, total_reward, terminated, truncated, info
+        return self.observation(next_observation), total_reward, terminated, truncated, info
 
     def render(self, *args, **kwargs):
         """This removes the default visualization of the partially observable field of view."""
         kwargs['highlight'] = False
         return self.unwrapped.render(*args, **kwargs)
-
