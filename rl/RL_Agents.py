@@ -94,17 +94,12 @@ class QLearningAgent:
                 next_observation, reward, terminated, truncated, _ = self.env.step(action)
                 current_length += 1
                 if terminated:
-                    # if game_state.is_goal_state():
-                    #     reward *= 10
-                    # else:
-                    #     reward = -10
                     print(f"reached the goal with {current_length} steps at iter: {e}, and reward: {reward}")
                 if truncated:
                     print(f"truncated with {current_length} steps at iter: {e}, and reward: {reward}")
-                # next_state = self.translate_state(next_observation)
                 is_picked_key = self._is_picked_key(game_state, action)
-                next_state = self.get_state_from_obs(next_observation, is_picked_key=is_picked_key)
-                # next_state = game_state.generate_successor(constants.Action(action))
+                # next_state = self.get_state_from_obs(next_observation, is_picked_key=is_picked_key) #todo uncomment
+                next_state = self.get_state_from_obs(next_observation)
                 done = terminated or truncated
                 self.update_q_table(game_state, action, reward, next_state)
                 game_state = next_state
@@ -116,9 +111,9 @@ class QLearningAgent:
 
     def get_state_from_obs(self, observation, is_picked_key=False):
         game_map = self.translate_observation(observation['image'])
-        # game_state = GameState(game_map, observation['direction'], goal_name="goal", goal_location=(6, 6))
+        game_state = GameState(game_map, observation['direction'], goal_name="goal", goal_location=(4, 4))
 
-        game_state = GameState(game_map, observation['direction'], is_picked_key=is_picked_key)
+        # game_state = GameState(game_map, observation['direction'], is_picked_key=is_picked_key)
         return game_state
 
     def save_train_results(self, model_dir):

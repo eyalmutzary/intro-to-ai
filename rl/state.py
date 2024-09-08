@@ -186,14 +186,14 @@ class GameState:
             raise ValueError("No target found in the current game state:" + str(game_map))
 
     def __str__(self) -> str:
-        # obs_map = ""
-        # for row in self._game_map:
-        #     obs_map += " ".join(row) + "\n"
-        # direction_str = Direction(self._player_direction).name
-        # return f"""Player location: {self._player_location}, Player direction: {direction_str}\n{obs_map}
-        #         """
+        obs_map = ""
+        for row in self._game_map:
+            obs_map += " ".join(row) + "\n"
         direction_str = Direction(self._player_direction).name
-        return f"""Player location: {self._player_location}, Player direction: {direction_str}"""
+        return f"""Player location: {self._player_location}, Player direction: {direction_str}\n{obs_map}
+                """
+        # direction_str = Direction(self._player_direction).name
+        # return f"""Player location: {self._player_location}, Player direction: {direction_str}"""
 
     def __hash__(self):
         # Convert game map (a list of lists) into a tuple of tuples so it's hashable

@@ -46,7 +46,7 @@ class QLearningAgent:
         else:
             action = self._act_play_mode(state, legal_actions)
 
-        return action.value
+        return action
 
     # TRAIN Mode Action Selection
     def _act_train_mode(self, state, legal_actions):
@@ -60,19 +60,19 @@ class QLearningAgent:
         action = self._choose_policy_action(state)
         if action != -1:
             return action
-        return self._choose_random_action(legal_actions)
+        return self._choose_random_action(legal_actions).value
 
     # Exploration: Select a random action
     @staticmethod
     def _choose_random_action(legal_actions):
-        return np.random.choice(legal_actions)
+        return np.random.choice(legal_actions).value
 
     # Exploitation: Select the best action based on Q-values
     def _act_exploit_mode(self, state, legal_actions):
         action, value = util.get_max_action(state, self.q_value_function)
         if value == 0 or action is None:
             return self._handle_unvisited_actions(state, legal_actions)
-        return action
+        return action.value
 
     # Handle case with unvisited actions
     def _handle_unvisited_actions(self, state, legal_actions):
