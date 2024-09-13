@@ -58,6 +58,14 @@ pip install gymnasium minigrid numpy pandas
 For the custom modules and files (constants.py, maps.py, problem.py, state.py, search_algorithms.py, util.py, etc.),
 ensure they are in the correct directory or package structure within your project.
 
+To run the project:
+
+```bash
+python game.py
+```
+Then you can set the map of the game by modifying the __main__ function.
+
+
 ## Acknowledgments
 - MiniGrid
 - Gymnasium
