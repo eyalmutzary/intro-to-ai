@@ -11,6 +11,7 @@ This project is based on the **Minigrid environment**, a simple grid world envir
 The project includes two different agents:
 1. **Q-learning Agent**
 2. **Search Agent**
+3. **Planning** - Deprecated. Here for inspiriation.
 
 ## Prerequisites
 Before running the project, ensure you have the following dependencies installed:
