@@ -27,7 +27,6 @@ class Game:
             
             path = a_star_search(problem, improved_heuristic)
             moves = self._convert_search_path_to_moves(path, state.goal_name)
-            
             i = 0
             while i < len(moves):
                 observation, reward, terminated, truncated, info = self.env.step(moves[i])
@@ -77,8 +76,11 @@ class Game:
         return moves
     
 if __name__ == "__main__":
-    # env = gym.make("MiniGrid-ObstructedMaze-Full-v0", render_mode="human")
+    # game = Game(env=gym.make(GAME_MAPS[3], render_mode="human"))
+    # game = Game(env=maps.DoorsV1Env(render_mode="human"))
+    # game = Game(env=maps.DoorsV2Env(render_mode="human"))
     game = Game(env=maps.DoorsV3Env(render_mode="human"))
     game.run()
     game.close()
+
     
