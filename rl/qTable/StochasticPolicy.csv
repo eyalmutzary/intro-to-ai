@@ -1,0 +1,3672 @@
+"Player location: (2, 3), Player direction: RIGHT
+wall wall wall wall wall
+wall empty ball empty wall
+wall ball empty agent wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",1
+"Player location: (2, 1), Player direction: UP
+wall wall wall wall wall
+wall empty ball empty wall
+wall agent empty empty wall
+wall empty ball goal wall
+wall wall wall wall wall
+
+                ",2
+"Player location: (1, 3), Player direction: LEFT
+wall wall wall wall wall
+wall empty empty agent wall
+wall empty ball empty wall
+wall empty ball goal wall
+wall wall wall wall wall
+
+                ",0
+"Player location: (1, 1), Player direction: DOWN
+wall wall wall wall wall
+wall agent empty empty wall
+wall empty empty ball wall
+wall empty ball goal wall
+wall wall wall wall wall
+
+                ",0
+"Player location: (2, 2), Player direction: LEFT
+wall wall wall wall wall
+wall empty empty empty wall
+wall ball agent empty wall
+wall ball empty goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (3, 2), Player direction: UP
+wall wall wall wall wall
+wall empty empty empty wall
+wall ball ball empty wall
+wall empty agent goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (1, 3), Player direction: UP
+wall wall wall wall wall
+wall empty ball agent wall
+wall empty ball empty wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (2, 2), Player direction: UP
+wall wall wall wall wall
+wall empty empty empty wall
+wall empty agent ball wall
+wall empty ball goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (1, 1), Player direction: LEFT
+wall wall wall wall wall
+wall agent empty empty wall
+wall empty empty ball wall
+wall empty ball goal wall
+wall wall wall wall wall
+
+                ",0
+"Player location: (2, 1), Player direction: UP
+wall wall wall wall wall
+wall ball empty empty wall
+wall agent ball empty wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",1
+"Player location: (2, 1), Player direction: UP
+wall wall wall wall wall
+wall ball empty empty wall
+wall agent empty empty wall
+wall ball empty goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (3, 1), Player direction: UP
+wall wall wall wall wall
+wall empty ball empty wall
+wall empty ball empty wall
+wall agent empty goal wall
+wall wall wall wall wall
+
+                ",1
+"Player location: (2, 2), Player direction: DOWN
+wall wall wall wall wall
+wall ball empty empty wall
+wall ball agent empty wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (2, 2), Player direction: DOWN
+wall wall wall wall wall
+wall empty empty empty wall
+wall empty agent ball wall
+wall ball empty goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (2, 3), Player direction: LEFT
+wall wall wall wall wall
+wall empty empty ball wall
+wall ball empty agent wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (1, 1), Player direction: RIGHT
+wall wall wall wall wall
+wall agent ball empty wall
+wall empty empty empty wall
+wall ball empty goal wall
+wall wall wall wall wall
+
+                ",1
+"Player location: (2, 1), Player direction: RIGHT
+wall wall wall wall wall
+wall empty ball empty wall
+wall agent empty ball wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",2
+"Player location: (2, 3), Player direction: LEFT
+wall wall wall wall wall
+wall empty empty empty wall
+wall ball empty agent wall
+wall ball empty goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (1, 3), Player direction: DOWN
+wall wall wall wall wall
+wall empty empty agent wall
+wall empty empty ball wall
+wall empty ball goal wall
+wall wall wall wall wall
+
+                ",1
+"Player location: (2, 2), Player direction: LEFT
+wall wall wall wall wall
+wall empty empty empty wall
+wall empty agent ball wall
+wall ball empty goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (1, 2), Player direction: LEFT
+wall wall wall wall wall
+wall empty agent empty wall
+wall empty ball empty wall
+wall empty ball goal wall
+wall wall wall wall wall
+
+                ",0
+"Player location: (3, 1), Player direction: RIGHT
+wall wall wall wall wall
+wall ball empty ball wall
+wall empty empty empty wall
+wall agent empty goal wall
+wall wall wall wall wall
+
+                ",2
+"Player location: (1, 1), Player direction: UP
+wall wall wall wall wall
+wall agent empty ball wall
+wall empty empty empty wall
+wall ball empty goal wall
+wall wall wall wall wall
+
+                ",1
+"Player location: (2, 1), Player direction: LEFT
+wall wall wall wall wall
+wall empty ball ball wall
+wall agent empty empty wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",0
+"Player location: (1, 3), Player direction: LEFT
+wall wall wall wall wall
+wall empty ball agent wall
+wall empty empty ball wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",0
+"Player location: (1, 3), Player direction: LEFT
+wall wall wall wall wall
+wall empty empty agent wall
+wall ball empty empty wall
+wall empty ball goal wall
+wall wall wall wall wall
+
+                ",0
+"Player location: (1, 2), Player direction: DOWN
+wall wall wall wall wall
+wall ball agent empty wall
+wall empty ball empty wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",0
+"Player location: (1, 2), Player direction: RIGHT
+wall wall wall wall wall
+wall empty agent empty wall
+wall empty ball empty wall
+wall empty ball goal wall
+wall wall wall wall wall
+
+                ",2
+"Player location: (3, 2), Player direction: UP
+wall wall wall wall wall
+wall ball ball empty wall
+wall empty empty empty wall
+wall empty agent goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (3, 1), Player direction: DOWN
+wall wall wall wall wall
+wall empty empty ball wall
+wall empty empty empty wall
+wall agent ball goal wall
+wall wall wall wall wall
+
+                ",0
+"Player location: (1, 2), Player direction: RIGHT
+wall wall wall wall wall
+wall ball agent empty wall
+wall empty empty ball wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",1
+"Player location: (3, 1), Player direction: UP
+wall wall wall wall wall
+wall empty ball ball wall
+wall empty empty empty wall
+wall agent empty goal wall
+wall wall wall wall wall
+
+                ",1
+"Player location: (1, 3), Player direction: DOWN
+wall wall wall wall wall
+wall empty empty agent wall
+wall empty empty empty wall
+wall ball ball goal wall
+wall wall wall wall wall
+
+                ",2
+"Player location: (1, 2), Player direction: RIGHT
+wall wall wall wall wall
+wall ball agent ball wall
+wall empty empty empty wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",1
+"Player location: (1, 2), Player direction: DOWN
+wall wall wall wall wall
+wall empty agent empty wall
+wall ball ball empty wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",0
+"Player location: (2, 3), Player direction: DOWN
+wall wall wall wall wall
+wall empty ball empty wall
+wall empty empty agent wall
+wall empty ball goal wall
+wall wall wall wall wall
+
+                ",2
+"Player location: (3, 2), Player direction: DOWN
+wall wall wall wall wall
+wall ball empty empty wall
+wall empty empty ball wall
+wall empty agent goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (2, 1), Player direction: RIGHT
+wall wall wall wall wall
+wall empty ball empty wall
+wall agent empty empty wall
+wall empty ball goal wall
+wall wall wall wall wall
+
+                ",1
+"Player location: (2, 1), Player direction: UP
+wall wall wall wall wall
+wall ball empty ball wall
+wall agent empty empty wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",1
+"Player location: (3, 2), Player direction: LEFT
+wall wall wall wall wall
+wall empty empty ball wall
+wall ball empty empty wall
+wall empty agent goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (2, 2), Player direction: LEFT
+wall wall wall wall wall
+wall empty ball empty wall
+wall ball agent empty wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (1, 2), Player direction: UP
+wall wall wall wall wall
+wall ball agent empty wall
+wall empty empty ball wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",1
+"Player location: (1, 3), Player direction: RIGHT
+wall wall wall wall wall
+wall ball empty agent wall
+wall empty empty empty wall
+wall empty ball goal wall
+wall wall wall wall wall
+
+                ",1
+"Player location: (3, 1), Player direction: UP
+wall wall wall wall wall
+wall empty empty ball wall
+wall ball empty empty wall
+wall agent empty goal wall
+wall wall wall wall wall
+
+                ",1
+"Player location: (3, 2), Player direction: RIGHT
+wall wall wall wall wall
+wall empty ball empty wall
+wall empty empty ball wall
+wall empty agent goal wall
+wall wall wall wall wall
+
+                ",2
+"Player location: (1, 1), Player direction: DOWN
+wall wall wall wall wall
+wall agent ball empty wall
+wall ball empty empty wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",0
+"Player location: (1, 2), Player direction: LEFT
+wall wall wall wall wall
+wall ball agent empty wall
+wall empty ball empty wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",0
+"Player location: (2, 2), Player direction: LEFT
+wall wall wall wall wall
+wall empty empty ball wall
+wall empty agent empty wall
+wall ball empty goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (3, 1), Player direction: RIGHT
+wall wall wall wall wall
+wall empty empty empty wall
+wall ball empty ball wall
+wall agent empty goal wall
+wall wall wall wall wall
+
+                ",2
+"Player location: (1, 3), Player direction: DOWN
+wall wall wall wall wall
+wall empty empty agent wall
+wall empty ball ball wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",1
+"Player location: (2, 2), Player direction: RIGHT
+wall wall wall wall wall
+wall empty empty ball wall
+wall ball agent empty wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (2, 3), Player direction: LEFT
+wall wall wall wall wall
+wall ball empty empty wall
+wall empty empty agent wall
+wall ball empty goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (1, 1), Player direction: RIGHT
+wall wall wall wall wall
+wall agent empty ball wall
+wall empty empty empty wall
+wall empty ball goal wall
+wall wall wall wall wall
+
+                ",1
+"Player location: (1, 3), Player direction: LEFT
+wall wall wall wall wall
+wall empty empty agent wall
+wall empty ball empty wall
+wall ball empty goal wall
+wall wall wall wall wall
+
+                ",0
+"Player location: (1, 1), Player direction: RIGHT
+wall wall wall wall wall
+wall agent empty empty wall
+wall empty empty empty wall
+wall ball ball goal wall
+wall wall wall wall wall
+
+                ",2
+"Player location: (2, 3), Player direction: DOWN
+wall wall wall wall wall
+wall empty empty empty wall
+wall ball ball agent wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",2
+"Player location: (3, 2), Player direction: UP
+wall wall wall wall wall
+wall ball empty empty wall
+wall empty ball empty wall
+wall empty agent goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (2, 3), Player direction: UP
+wall wall wall wall wall
+wall empty empty ball wall
+wall empty empty agent wall
+wall ball empty goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (2, 2), Player direction: RIGHT
+wall wall wall wall wall
+wall empty empty empty wall
+wall ball agent empty wall
+wall empty ball goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (1, 1), Player direction: RIGHT
+wall wall wall wall wall
+wall agent empty ball wall
+wall ball empty empty wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",2
+"Player location: (1, 3), Player direction: RIGHT
+wall wall wall wall wall
+wall empty empty agent wall
+wall empty empty ball wall
+wall empty ball goal wall
+wall wall wall wall wall
+
+                ",1
+"Player location: (2, 1), Player direction: DOWN
+wall wall wall wall wall
+wall empty ball empty wall
+wall agent empty empty wall
+wall empty ball goal wall
+wall wall wall wall wall
+
+                ",2
+"Player location: (3, 1), Player direction: RIGHT
+wall wall wall wall wall
+wall empty ball empty wall
+wall ball empty empty wall
+wall agent empty goal wall
+wall wall wall wall wall
+
+                ",2
+"Player location: (3, 1), Player direction: DOWN
+wall wall wall wall wall
+wall empty ball empty wall
+wall empty empty empty wall
+wall agent ball goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (2, 2), Player direction: RIGHT
+wall wall wall wall wall
+wall empty empty empty wall
+wall ball agent empty wall
+wall ball empty goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (1, 2), Player direction: DOWN
+wall wall wall wall wall
+wall empty agent ball wall
+wall empty empty empty wall
+wall empty ball goal wall
+wall wall wall wall wall
+
+                ",0
+"Player location: (2, 3), Player direction: DOWN
+wall wall wall wall wall
+wall empty ball empty wall
+wall empty empty agent wall
+wall ball empty goal wall
+wall wall wall wall wall
+
+                ",2
+"Player location: (3, 1), Player direction: UP
+wall wall wall wall wall
+wall ball empty empty wall
+wall ball empty empty wall
+wall agent empty goal wall
+wall wall wall wall wall
+
+                ",1
+"Player location: (2, 1), Player direction: RIGHT
+wall wall wall wall wall
+wall empty empty ball wall
+wall agent empty empty wall
+wall ball empty goal wall
+wall wall wall wall wall
+
+                ",0
+"Player location: (2, 1), Player direction: UP
+wall wall wall wall wall
+wall ball empty empty wall
+wall agent empty empty wall
+wall empty ball goal wall
+wall wall wall wall wall
+
+                ",1
+"Player location: (1, 1), Player direction: UP
+wall wall wall wall wall
+wall agent empty empty wall
+wall empty empty ball wall
+wall ball empty goal wall
+wall wall wall wall wall
+
+                ",1
+"Player location: (1, 2), Player direction: DOWN
+wall wall wall wall wall
+wall empty agent empty wall
+wall empty ball empty wall
+wall ball empty goal wall
+wall wall wall wall wall
+
+                ",1
+"Player location: (2, 2), Player direction: LEFT
+wall wall wall wall wall
+wall empty ball empty wall
+wall empty agent empty wall
+wall empty ball goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (2, 3), Player direction: DOWN
+wall wall wall wall wall
+wall ball empty empty wall
+wall empty empty agent wall
+wall ball empty goal wall
+wall wall wall wall wall
+
+                ",2
+"Player location: (2, 3), Player direction: DOWN
+wall wall wall wall wall
+wall empty empty empty wall
+wall empty ball agent wall
+wall empty ball goal wall
+wall wall wall wall wall
+
+                ",2
+"Player location: (1, 1), Player direction: LEFT
+wall wall wall wall wall
+wall agent empty empty wall
+wall empty empty ball wall
+wall ball empty goal wall
+wall wall wall wall wall
+
+                ",0
+"Player location: (2, 3), Player direction: RIGHT
+wall wall wall wall wall
+wall empty empty ball wall
+wall ball empty agent wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",1
+"Player location: (2, 1), Player direction: RIGHT
+wall wall wall wall wall
+wall empty empty empty wall
+wall agent ball ball wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",1
+"Player location: (2, 2), Player direction: LEFT
+wall wall wall wall wall
+wall empty empty ball wall
+wall empty agent ball wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (2, 1), Player direction: DOWN
+wall wall wall wall wall
+wall empty empty empty wall
+wall agent empty empty wall
+wall ball ball goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (2, 1), Player direction: RIGHT
+wall wall wall wall wall
+wall empty empty ball wall
+wall agent empty ball wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",2
+"Player location: (2, 3), Player direction: RIGHT
+wall wall wall wall wall
+wall ball empty empty wall
+wall empty empty agent wall
+wall empty ball goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (1, 1), Player direction: LEFT
+wall wall wall wall wall
+wall agent empty ball wall
+wall empty ball empty wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",0
+"Player location: (1, 1), Player direction: DOWN
+wall wall wall wall wall
+wall agent empty ball wall
+wall empty empty ball wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",0
+"Player location: (2, 3), Player direction: LEFT
+wall wall wall wall wall
+wall empty ball empty wall
+wall empty empty agent wall
+wall empty ball goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (2, 2), Player direction: DOWN
+wall wall wall wall wall
+wall empty empty ball wall
+wall empty agent empty wall
+wall ball empty goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (2, 2), Player direction: DOWN
+wall wall wall wall wall
+wall ball empty empty wall
+wall empty agent ball wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (2, 1), Player direction: DOWN
+wall wall wall wall wall
+wall empty empty ball wall
+wall agent empty ball wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",2
+"Player location: (2, 2), Player direction: LEFT
+wall wall wall wall wall
+wall ball empty empty wall
+wall ball agent empty wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (1, 1), Player direction: LEFT
+wall wall wall wall wall
+wall agent empty ball wall
+wall empty empty empty wall
+wall ball empty goal wall
+wall wall wall wall wall
+
+                ",0
+"Player location: (2, 2), Player direction: RIGHT
+wall wall wall wall wall
+wall ball empty ball wall
+wall empty agent empty wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (1, 3), Player direction: DOWN
+wall wall wall wall wall
+wall empty empty agent wall
+wall empty ball empty wall
+wall ball empty goal wall
+wall wall wall wall wall
+
+                ",2
+"Player location: (2, 3), Player direction: UP
+wall wall wall wall wall
+wall empty empty empty wall
+wall empty ball agent wall
+wall empty ball goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (1, 2), Player direction: LEFT
+wall wall wall wall wall
+wall ball agent empty wall
+wall empty empty empty wall
+wall empty ball goal wall
+wall wall wall wall wall
+
+                ",0
+"Player location: (1, 3), Player direction: DOWN
+wall wall wall wall wall
+wall ball empty agent wall
+wall empty empty ball wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",1
+"Player location: (1, 1), Player direction: DOWN
+wall wall wall wall wall
+wall agent empty empty wall
+wall empty ball ball wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",0
+"Player location: (1, 2), Player direction: DOWN
+wall wall wall wall wall
+wall empty agent empty wall
+wall empty empty ball wall
+wall ball empty goal wall
+wall wall wall wall wall
+
+                ",0
+"Player location: (2, 3), Player direction: RIGHT
+wall wall wall wall wall
+wall empty empty empty wall
+wall ball empty agent wall
+wall empty ball goal wall
+wall wall wall wall wall
+
+                ",1
+"Player location: (3, 2), Player direction: RIGHT
+wall wall wall wall wall
+wall empty ball ball wall
+wall empty empty empty wall
+wall empty agent goal wall
+wall wall wall wall wall
+
+                ",2
+"Player location: (3, 1), Player direction: LEFT
+wall wall wall wall wall
+wall ball empty empty wall
+wall ball empty empty wall
+wall agent empty goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (1, 3), Player direction: DOWN
+wall wall wall wall wall
+wall ball empty agent wall
+wall empty empty empty wall
+wall ball empty goal wall
+wall wall wall wall wall
+
+                ",2
+"Player location: (1, 1), Player direction: LEFT
+wall wall wall wall wall
+wall agent empty empty wall
+wall empty ball ball wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",0
+"Player location: (2, 1), Player direction: UP
+wall wall wall wall wall
+wall empty empty empty wall
+wall agent empty ball wall
+wall empty ball goal wall
+wall wall wall wall wall
+
+                ",2
+"Player location: (1, 1), Player direction: LEFT
+wall wall wall wall wall
+wall agent empty empty wall
+wall empty empty empty wall
+wall ball ball goal wall
+wall wall wall wall wall
+
+                ",0
+"Player location: (1, 1), Player direction: RIGHT
+wall wall wall wall wall
+wall agent ball empty wall
+wall empty empty ball wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",1
+"Player location: (1, 1), Player direction: DOWN
+wall wall wall wall wall
+wall agent empty empty wall
+wall ball empty empty wall
+wall empty ball goal wall
+wall wall wall wall wall
+
+                ",0
+"Player location: (2, 2), Player direction: LEFT
+wall wall wall wall wall
+wall empty ball empty wall
+wall empty agent ball wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (3, 1), Player direction: RIGHT
+wall wall wall wall wall
+wall empty empty empty wall
+wall empty empty ball wall
+wall agent ball goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (2, 2), Player direction: UP
+wall wall wall wall wall
+wall empty empty ball wall
+wall empty agent empty wall
+wall empty ball goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (2, 1), Player direction: RIGHT
+wall wall wall wall wall
+wall empty empty ball wall
+wall agent empty empty wall
+wall empty ball goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (1, 1), Player direction: RIGHT
+wall wall wall wall wall
+wall agent empty ball wall
+wall empty empty empty wall
+wall ball empty goal wall
+wall wall wall wall wall
+
+                ",1
+"Player location: (2, 1), Player direction: UP
+wall wall wall wall wall
+wall empty empty empty wall
+wall agent empty ball wall
+wall ball empty goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (3, 1), Player direction: UP
+wall wall wall wall wall
+wall empty ball empty wall
+wall empty empty empty wall
+wall agent ball goal wall
+wall wall wall wall wall
+
+                ",2
+"Player location: (1, 3), Player direction: DOWN
+wall wall wall wall wall
+wall empty ball agent wall
+wall ball empty empty wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",1
+"Player location: (2, 2), Player direction: DOWN
+wall wall wall wall wall
+wall empty empty ball wall
+wall empty agent ball wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (2, 2), Player direction: UP
+wall wall wall wall wall
+wall empty empty empty wall
+wall ball agent empty wall
+wall ball empty goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (1, 2), Player direction: DOWN
+wall wall wall wall wall
+wall empty agent empty wall
+wall ball empty empty wall
+wall ball empty goal wall
+wall wall wall wall wall
+
+                ",0
+"Player location: (1, 1), Player direction: LEFT
+wall wall wall wall wall
+wall agent empty empty wall
+wall ball empty empty wall
+wall empty ball goal wall
+wall wall wall wall wall
+
+                ",0
+"Player location: (2, 2), Player direction: LEFT
+wall wall wall wall wall
+wall empty empty empty wall
+wall ball agent empty wall
+wall empty ball goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (2, 2), Player direction: LEFT
+wall wall wall wall wall
+wall ball empty empty wall
+wall empty agent ball wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (1, 3), Player direction: RIGHT
+wall wall wall wall wall
+wall empty empty agent wall
+wall empty ball empty wall
+wall empty ball goal wall
+wall wall wall wall wall
+
+                ",1
+"Player location: (1, 3), Player direction: DOWN
+wall wall wall wall wall
+wall empty ball agent wall
+wall empty empty empty wall
+wall ball empty goal wall
+wall wall wall wall wall
+
+                ",2
+"Player location: (1, 1), Player direction: LEFT
+wall wall wall wall wall
+wall agent empty ball wall
+wall ball empty empty wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",0
+"Player location: (3, 1), Player direction: RIGHT
+wall wall wall wall wall
+wall empty ball empty wall
+wall empty empty empty wall
+wall agent ball goal wall
+wall wall wall wall wall
+
+                ",0
+"Player location: (1, 3), Player direction: DOWN
+wall wall wall wall wall
+wall ball empty agent wall
+wall empty ball empty wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",2
+"Player location: (2, 2), Player direction: RIGHT
+wall wall wall wall wall
+wall ball ball empty wall
+wall empty agent empty wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (1, 1), Player direction: RIGHT
+wall wall wall wall wall
+wall agent empty empty wall
+wall empty empty ball wall
+wall ball empty goal wall
+wall wall wall wall wall
+
+                ",2
+"Player location: (3, 2), Player direction: DOWN
+wall wall wall wall wall
+wall ball ball empty wall
+wall empty empty empty wall
+wall empty agent goal wall
+wall wall wall wall wall
+
+                ",0
+"Player location: (2, 2), Player direction: DOWN
+wall wall wall wall wall
+wall empty ball empty wall
+wall ball agent empty wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (3, 1), Player direction: RIGHT
+wall wall wall wall wall
+wall empty ball empty wall
+wall empty empty ball wall
+wall agent empty goal wall
+wall wall wall wall wall
+
+                ",2
+"Player location: (1, 1), Player direction: RIGHT
+wall wall wall wall wall
+wall agent empty empty wall
+wall ball empty ball wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",2
+"Player location: (2, 3), Player direction: LEFT
+wall wall wall wall wall
+wall empty empty ball wall
+wall empty empty agent wall
+wall ball empty goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (1, 3), Player direction: LEFT
+wall wall wall wall wall
+wall empty ball agent wall
+wall empty empty empty wall
+wall ball empty goal wall
+wall wall wall wall wall
+
+                ",0
+"Player location: (2, 1), Player direction: UP
+wall wall wall wall wall
+wall empty empty ball wall
+wall agent empty empty wall
+wall empty ball goal wall
+wall wall wall wall wall
+
+                ",1
+"Player location: (3, 1), Player direction: LEFT
+wall wall wall wall wall
+wall empty ball ball wall
+wall empty empty empty wall
+wall agent empty goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (1, 2), Player direction: UP
+wall wall wall wall wall
+wall ball agent empty wall
+wall empty empty empty wall
+wall empty ball goal wall
+wall wall wall wall wall
+
+                ",1
+"Player location: (3, 1), Player direction: DOWN
+wall wall wall wall wall
+wall empty ball empty wall
+wall empty empty ball wall
+wall agent empty goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (2, 2), Player direction: RIGHT
+wall wall wall wall wall
+wall empty ball empty wall
+wall empty agent ball wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (2, 1), Player direction: UP
+wall wall wall wall wall
+wall empty empty ball wall
+wall agent empty ball wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (2, 2), Player direction: DOWN
+wall wall wall wall wall
+wall empty empty empty wall
+wall empty agent empty wall
+wall ball ball goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (2, 3), Player direction: UP
+wall wall wall wall wall
+wall empty empty ball wall
+wall ball empty agent wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (2, 1), Player direction: LEFT
+wall wall wall wall wall
+wall empty ball empty wall
+wall agent empty empty wall
+wall ball empty goal wall
+wall wall wall wall wall
+
+                ",1
+"Player location: (3, 1), Player direction: LEFT
+wall wall wall wall wall
+wall empty ball empty wall
+wall empty ball empty wall
+wall agent empty goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (2, 1), Player direction: RIGHT
+wall wall wall wall wall
+wall ball empty empty wall
+wall agent ball empty wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (1, 2), Player direction: LEFT
+wall wall wall wall wall
+wall empty agent ball wall
+wall empty empty empty wall
+wall empty ball goal wall
+wall wall wall wall wall
+
+                ",2
+"Player location: (1, 2), Player direction: DOWN
+wall wall wall wall wall
+wall empty agent ball wall
+wall empty ball empty wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",0
+"Player location: (3, 1), Player direction: DOWN
+wall wall wall wall wall
+wall ball empty empty wall
+wall empty ball empty wall
+wall agent empty goal wall
+wall wall wall wall wall
+
+                ",0
+"Player location: (1, 3), Player direction: RIGHT
+wall wall wall wall wall
+wall empty empty agent wall
+wall ball empty empty wall
+wall ball empty goal wall
+wall wall wall wall wall
+
+                ",1
+"Player location: (3, 2), Player direction: DOWN
+wall wall wall wall wall
+wall empty ball ball wall
+wall empty empty empty wall
+wall empty agent goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (1, 1), Player direction: DOWN
+wall wall wall wall wall
+wall agent empty empty wall
+wall ball empty empty wall
+wall ball empty goal wall
+wall wall wall wall wall
+
+                ",0
+"Player location: (2, 3), Player direction: LEFT
+wall wall wall wall wall
+wall empty empty empty wall
+wall empty empty agent wall
+wall ball ball goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (2, 1), Player direction: DOWN
+wall wall wall wall wall
+wall ball empty empty wall
+wall agent ball empty wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",0
+"Player location: (2, 2), Player direction: DOWN
+wall wall wall wall wall
+wall empty empty ball wall
+wall empty agent empty wall
+wall empty ball goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (2, 1), Player direction: UP
+wall wall wall wall wall
+wall empty ball ball wall
+wall agent empty empty wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (3, 1), Player direction: DOWN
+wall wall wall wall wall
+wall ball empty ball wall
+wall empty empty empty wall
+wall agent empty goal wall
+wall wall wall wall wall
+
+                ",0
+"Player location: (3, 1), Player direction: RIGHT
+wall wall wall wall wall
+wall empty empty empty wall
+wall empty ball empty wall
+wall agent ball goal wall
+wall wall wall wall wall
+
+                ",0
+"Player location: (2, 1), Player direction: DOWN
+wall wall wall wall wall
+wall ball empty empty wall
+wall agent empty empty wall
+wall empty ball goal wall
+wall wall wall wall wall
+
+                ",2
+"Player location: (1, 1), Player direction: DOWN
+wall wall wall wall wall
+wall agent empty ball wall
+wall empty empty empty wall
+wall ball empty goal wall
+wall wall wall wall wall
+
+                ",0
+"Player location: (1, 3), Player direction: RIGHT
+wall wall wall wall wall
+wall ball empty agent wall
+wall ball empty empty wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",1
+"Player location: (1, 3), Player direction: LEFT
+wall wall wall wall wall
+wall ball empty agent wall
+wall ball empty empty wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",0
+"Player location: (1, 1), Player direction: DOWN
+wall wall wall wall wall
+wall agent empty empty wall
+wall empty empty ball wall
+wall ball empty goal wall
+wall wall wall wall wall
+
+                ",2
+"Player location: (1, 3), Player direction: LEFT
+wall wall wall wall wall
+wall empty empty agent wall
+wall empty empty empty wall
+wall ball ball goal wall
+wall wall wall wall wall
+
+                ",0
+"Player location: (2, 1), Player direction: DOWN
+wall wall wall wall wall
+wall empty empty empty wall
+wall agent empty ball wall
+wall ball empty goal wall
+wall wall wall wall wall
+
+                ",0
+"Player location: (1, 1), Player direction: RIGHT
+wall wall wall wall wall
+wall agent empty empty wall
+wall empty empty ball wall
+wall empty ball goal wall
+wall wall wall wall wall
+
+                ",2
+"Player location: (3, 2), Player direction: RIGHT
+wall wall wall wall wall
+wall empty empty ball wall
+wall empty empty ball wall
+wall empty agent goal wall
+wall wall wall wall wall
+
+                ",2
+"Player location: (1, 2), Player direction: DOWN
+wall wall wall wall wall
+wall ball agent empty wall
+wall empty empty empty wall
+wall ball empty goal wall
+wall wall wall wall wall
+
+                ",0
+"Player location: (3, 1), Player direction: DOWN
+wall wall wall wall wall
+wall empty ball ball wall
+wall empty empty empty wall
+wall agent empty goal wall
+wall wall wall wall wall
+
+                ",0
+"Player location: (2, 1), Player direction: RIGHT
+wall wall wall wall wall
+wall empty empty ball wall
+wall agent ball empty wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",1
+"Player location: (2, 1), Player direction: DOWN
+wall wall wall wall wall
+wall empty empty ball wall
+wall agent empty empty wall
+wall ball empty goal wall
+wall wall wall wall wall
+
+                ",0
+"Player location: (2, 2), Player direction: DOWN
+wall wall wall wall wall
+wall empty empty ball wall
+wall ball agent empty wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (2, 2), Player direction: LEFT
+wall wall wall wall wall
+wall empty ball ball wall
+wall empty agent empty wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (3, 1), Player direction: UP
+wall wall wall wall wall
+wall empty empty empty wall
+wall empty ball ball wall
+wall agent empty goal wall
+wall wall wall wall wall
+
+                ",2
+"Player location: (2, 1), Player direction: LEFT
+wall wall wall wall wall
+wall empty ball empty wall
+wall agent empty ball wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (2, 3), Player direction: UP
+wall wall wall wall wall
+wall empty ball empty wall
+wall ball empty agent wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (1, 1), Player direction: LEFT
+wall wall wall wall wall
+wall agent empty empty wall
+wall ball empty ball wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",0
+"Player location: (3, 1), Player direction: UP
+wall wall wall wall wall
+wall empty empty ball wall
+wall empty empty ball wall
+wall agent empty goal wall
+wall wall wall wall wall
+
+                ",2
+"Player location: (1, 2), Player direction: DOWN
+wall wall wall wall wall
+wall empty agent empty wall
+wall empty empty ball wall
+wall empty ball goal wall
+wall wall wall wall wall
+
+                ",0
+"Player location: (2, 3), Player direction: DOWN
+wall wall wall wall wall
+wall empty empty empty wall
+wall empty ball agent wall
+wall ball empty goal wall
+wall wall wall wall wall
+
+                ",2
+"Player location: (1, 1), Player direction: DOWN
+wall wall wall wall wall
+wall agent empty empty wall
+wall ball empty ball wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",0
+"Player location: (3, 1), Player direction: UP
+wall wall wall wall wall
+wall ball empty empty wall
+wall empty empty empty wall
+wall agent ball goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (2, 2), Player direction: RIGHT
+wall wall wall wall wall
+wall empty empty ball wall
+wall empty agent ball wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (1, 2), Player direction: RIGHT
+wall wall wall wall wall
+wall empty agent ball wall
+wall empty empty empty wall
+wall empty ball goal wall
+wall wall wall wall wall
+
+                ",1
+"Player location: (2, 1), Player direction: RIGHT
+wall wall wall wall wall
+wall empty empty empty wall
+wall agent empty empty wall
+wall ball ball goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (2, 1), Player direction: LEFT
+wall wall wall wall wall
+wall ball empty empty wall
+wall agent empty empty wall
+wall empty ball goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (2, 2), Player direction: DOWN
+wall wall wall wall wall
+wall empty empty empty wall
+wall ball agent empty wall
+wall empty ball goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (2, 1), Player direction: UP
+wall wall wall wall wall
+wall empty ball empty wall
+wall agent empty ball wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (1, 1), Player direction: DOWN
+wall wall wall wall wall
+wall agent ball empty wall
+wall empty empty empty wall
+wall empty ball goal wall
+wall wall wall wall wall
+
+                ",0
+"Player location: (1, 2), Player direction: DOWN
+wall wall wall wall wall
+wall ball agent empty wall
+wall ball empty empty wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",1
+"Player location: (3, 2), Player direction: RIGHT
+wall wall wall wall wall
+wall empty empty empty wall
+wall ball ball empty wall
+wall empty agent goal wall
+wall wall wall wall wall
+
+                ",2
+"Player location: (2, 1), Player direction: DOWN
+wall wall wall wall wall
+wall empty empty empty wall
+wall agent empty ball wall
+wall empty ball goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (3, 2), Player direction: RIGHT
+wall wall wall wall wall
+wall empty empty ball wall
+wall empty ball empty wall
+wall empty agent goal wall
+wall wall wall wall wall
+
+                ",2
+"Player location: (1, 1), Player direction: UP
+wall wall wall wall wall
+wall agent empty ball wall
+wall empty ball empty wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",1
+"Player location: (3, 1), Player direction: DOWN
+wall wall wall wall wall
+wall empty empty ball wall
+wall empty empty ball wall
+wall agent empty goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (1, 1), Player direction: UP
+wall wall wall wall wall
+wall agent empty empty wall
+wall empty ball ball wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",1
+"Player location: (1, 1), Player direction: RIGHT
+wall wall wall wall wall
+wall agent empty empty wall
+wall ball empty empty wall
+wall ball empty goal wall
+wall wall wall wall wall
+
+                ",2
+"Player location: (2, 1), Player direction: DOWN
+wall wall wall wall wall
+wall empty empty empty wall
+wall agent ball empty wall
+wall empty ball goal wall
+wall wall wall wall wall
+
+                ",0
+"Player location: (1, 1), Player direction: RIGHT
+wall wall wall wall wall
+wall agent empty empty wall
+wall ball empty empty wall
+wall empty ball goal wall
+wall wall wall wall wall
+
+                ",2
+"Player location: (2, 1), Player direction: UP
+wall wall wall wall wall
+wall empty empty empty wall
+wall agent ball ball wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",2
+"Player location: (1, 1), Player direction: DOWN
+wall wall wall wall wall
+wall agent ball ball wall
+wall empty empty empty wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",0
+"Player location: (2, 1), Player direction: LEFT
+wall wall wall wall wall
+wall empty empty ball wall
+wall agent empty ball wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",1
+"Player location: (2, 2), Player direction: LEFT
+wall wall wall wall wall
+wall empty ball empty wall
+wall empty agent empty wall
+wall ball empty goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (1, 3), Player direction: LEFT
+wall wall wall wall wall
+wall ball empty agent wall
+wall empty empty empty wall
+wall ball empty goal wall
+wall wall wall wall wall
+
+                ",2
+"Player location: (1, 1), Player direction: RIGHT
+wall wall wall wall wall
+wall agent ball ball wall
+wall empty empty empty wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",1
+"Player location: (1, 3), Player direction: LEFT
+wall wall wall wall wall
+wall empty empty agent wall
+wall empty empty ball wall
+wall empty ball goal wall
+wall wall wall wall wall
+
+                ",0
+"Player location: (3, 1), Player direction: RIGHT
+wall wall wall wall wall
+wall ball empty empty wall
+wall ball empty empty wall
+wall agent empty goal wall
+wall wall wall wall wall
+
+                ",2
+"Player location: (2, 1), Player direction: RIGHT
+wall wall wall wall wall
+wall ball empty ball wall
+wall agent empty empty wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",1
+"Player location: (2, 3), Player direction: RIGHT
+wall wall wall wall wall
+wall ball ball empty wall
+wall empty empty agent wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",1
+"Player location: (2, 1), Player direction: RIGHT
+wall wall wall wall wall
+wall ball ball empty wall
+wall agent empty empty wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",0
+"Player location: (2, 2), Player direction: DOWN
+wall wall wall wall wall
+wall ball empty empty wall
+wall empty agent empty wall
+wall empty ball goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (2, 2), Player direction: RIGHT
+wall wall wall wall wall
+wall empty ball empty wall
+wall empty agent empty wall
+wall ball empty goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (2, 1), Player direction: DOWN
+wall wall wall wall wall
+wall empty ball empty wall
+wall agent empty empty wall
+wall ball empty goal wall
+wall wall wall wall wall
+
+                ",0
+"Player location: (2, 2), Player direction: UP
+wall wall wall wall wall
+wall empty empty ball wall
+wall ball agent empty wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (3, 1), Player direction: RIGHT
+wall wall wall wall wall
+wall empty empty empty wall
+wall empty ball ball wall
+wall agent empty goal wall
+wall wall wall wall wall
+
+                ",0
+"Player location: (2, 1), Player direction: RIGHT
+wall wall wall wall wall
+wall empty empty empty wall
+wall agent empty ball wall
+wall ball empty goal wall
+wall wall wall wall wall
+
+                ",0
+"Player location: (1, 1), Player direction: UP
+wall wall wall wall wall
+wall agent empty empty wall
+wall empty empty empty wall
+wall ball ball goal wall
+wall wall wall wall wall
+
+                ",1
+"Player location: (1, 2), Player direction: LEFT
+wall wall wall wall wall
+wall empty agent empty wall
+wall empty ball empty wall
+wall ball empty goal wall
+wall wall wall wall wall
+
+                ",0
+"Player location: (2, 1), Player direction: RIGHT
+wall wall wall wall wall
+wall empty ball ball wall
+wall agent empty empty wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",1
+"Player location: (2, 2), Player direction: RIGHT
+wall wall wall wall wall
+wall ball empty empty wall
+wall empty agent ball wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (3, 1), Player direction: RIGHT
+wall wall wall wall wall
+wall empty empty empty wall
+wall ball empty empty wall
+wall agent ball goal wall
+wall wall wall wall wall
+
+                ",0
+"Player location: (2, 3), Player direction: DOWN
+wall wall wall wall wall
+wall ball empty empty wall
+wall ball empty agent wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",2
+"Player location: (3, 2), Player direction: LEFT
+wall wall wall wall wall
+wall empty empty empty wall
+wall empty ball ball wall
+wall empty agent goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (1, 1), Player direction: RIGHT
+wall wall wall wall wall
+wall agent ball empty wall
+wall empty ball empty wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",1
+"Player location: (2, 2), Player direction: RIGHT
+wall wall wall wall wall
+wall empty ball ball wall
+wall empty agent empty wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (2, 3), Player direction: DOWN
+wall wall wall wall wall
+wall ball empty empty wall
+wall empty empty agent wall
+wall empty ball goal wall
+wall wall wall wall wall
+
+                ",2
+"Player location: (1, 1), Player direction: DOWN
+wall wall wall wall wall
+wall agent empty ball wall
+wall empty ball empty wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",0
+"Player location: (1, 3), Player direction: RIGHT
+wall wall wall wall wall
+wall empty empty agent wall
+wall empty ball ball wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",1
+"Player location: (1, 2), Player direction: RIGHT
+wall wall wall wall wall
+wall empty agent empty wall
+wall empty ball ball wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",2
+"Player location: (2, 3), Player direction: DOWN
+wall wall wall wall wall
+wall empty ball empty wall
+wall empty ball agent wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",2
+"Player location: (1, 2), Player direction: LEFT
+wall wall wall wall wall
+wall ball agent empty wall
+wall empty empty ball wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",0
+"Player location: (2, 2), Player direction: RIGHT
+wall wall wall wall wall
+wall empty empty empty wall
+wall empty agent ball wall
+wall empty ball goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (2, 2), Player direction: DOWN
+wall wall wall wall wall
+wall empty ball ball wall
+wall empty agent empty wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (2, 2), Player direction: UP
+wall wall wall wall wall
+wall empty empty ball wall
+wall empty agent ball wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (2, 2), Player direction: DOWN
+wall wall wall wall wall
+wall empty empty empty wall
+wall empty agent ball wall
+wall empty ball goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (2, 1), Player direction: UP
+wall wall wall wall wall
+wall empty empty ball wall
+wall agent ball empty wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",2
+"Player location: (2, 3), Player direction: LEFT
+wall wall wall wall wall
+wall empty ball empty wall
+wall empty ball agent wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (1, 3), Player direction: RIGHT
+wall wall wall wall wall
+wall ball empty agent wall
+wall empty empty ball wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",1
+"Player location: (1, 2), Player direction: LEFT
+wall wall wall wall wall
+wall empty agent ball wall
+wall empty ball empty wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",0
+"Player location: (2, 2), Player direction: RIGHT
+wall wall wall wall wall
+wall empty empty empty wall
+wall empty agent ball wall
+wall ball empty goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (1, 1), Player direction: RIGHT
+wall wall wall wall wall
+wall agent ball empty wall
+wall empty empty empty wall
+wall empty ball goal wall
+wall wall wall wall wall
+
+                ",1
+"Player location: (2, 1), Player direction: UP
+wall wall wall wall wall
+wall empty ball empty wall
+wall agent empty empty wall
+wall ball empty goal wall
+wall wall wall wall wall
+
+                ",2
+"Player location: (2, 1), Player direction: RIGHT
+wall wall wall wall wall
+wall ball empty empty wall
+wall agent empty empty wall
+wall ball empty goal wall
+wall wall wall wall wall
+
+                ",0
+"Player location: (2, 3), Player direction: UP
+wall wall wall wall wall
+wall ball empty empty wall
+wall empty ball agent wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (2, 1), Player direction: UP
+wall wall wall wall wall
+wall ball empty empty wall
+wall agent empty ball wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",1
+"Player location: (1, 1), Player direction: DOWN
+wall wall wall wall wall
+wall agent empty empty wall
+wall empty empty empty wall
+wall ball ball goal wall
+wall wall wall wall wall
+
+                ",2
+"Player location: (2, 2), Player direction: LEFT
+wall wall wall wall wall
+wall empty empty empty wall
+wall ball agent ball wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (2, 2), Player direction: DOWN
+wall wall wall wall wall
+wall empty empty empty wall
+wall ball agent ball wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",0
+"Player location: (1, 2), Player direction: RIGHT
+wall wall wall wall wall
+wall ball agent empty wall
+wall empty ball empty wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",1
+"Player location: (1, 1), Player direction: LEFT
+wall wall wall wall wall
+wall agent empty empty wall
+wall ball empty empty wall
+wall ball empty goal wall
+wall wall wall wall wall
+
+                ",0
+"Player location: (1, 2), Player direction: RIGHT
+wall wall wall wall wall
+wall empty agent empty wall
+wall empty empty empty wall
+wall ball ball goal wall
+wall wall wall wall wall
+
+                ",2
+"Player location: (3, 2), Player direction: RIGHT
+wall wall wall wall wall
+wall ball empty ball wall
+wall empty empty empty wall
+wall empty agent goal wall
+wall wall wall wall wall
+
+                ",2
+"Player location: (1, 3), Player direction: LEFT
+wall wall wall wall wall
+wall empty empty agent wall
+wall ball empty empty wall
+wall ball empty goal wall
+wall wall wall wall wall
+
+                ",2
+"Player location: (1, 2), Player direction: DOWN
+wall wall wall wall wall
+wall empty agent empty wall
+wall empty ball ball wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",0
+"Player location: (3, 1), Player direction: DOWN
+wall wall wall wall wall
+wall empty empty empty wall
+wall empty ball empty wall
+wall agent ball goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (2, 2), Player direction: RIGHT
+wall wall wall wall wall
+wall ball empty empty wall
+wall empty agent empty wall
+wall ball empty goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (3, 1), Player direction: DOWN
+wall wall wall wall wall
+wall ball ball empty wall
+wall empty empty empty wall
+wall agent empty goal wall
+wall wall wall wall wall
+
+                ",0
+"Player location: (1, 1), Player direction: DOWN
+wall wall wall wall wall
+wall agent empty ball wall
+wall ball empty empty wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",0
+"Player location: (2, 1), Player direction: RIGHT
+wall wall wall wall wall
+wall ball empty empty wall
+wall agent empty empty wall
+wall empty ball goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (1, 1), Player direction: UP
+wall wall wall wall wall
+wall agent empty empty wall
+wall empty ball empty wall
+wall empty ball goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (2, 2), Player direction: LEFT
+wall wall wall wall wall
+wall empty empty ball wall
+wall ball agent empty wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (2, 1), Player direction: UP
+wall wall wall wall wall
+wall empty ball empty wall
+wall agent ball empty wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",1
+"Player location: (1, 1), Player direction: LEFT
+wall wall wall wall wall
+wall agent empty empty wall
+wall empty ball empty wall
+wall empty ball goal wall
+wall wall wall wall wall
+
+                ",0
+"Player location: (1, 2), Player direction: LEFT
+wall wall wall wall wall
+wall ball agent empty wall
+wall empty empty empty wall
+wall ball empty goal wall
+wall wall wall wall wall
+
+                ",0
+"Player location: (2, 2), Player direction: RIGHT
+wall wall wall wall wall
+wall empty ball empty wall
+wall empty agent empty wall
+wall empty ball goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (2, 1), Player direction: LEFT
+wall wall wall wall wall
+wall empty empty empty wall
+wall agent empty ball wall
+wall empty ball goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (3, 1), Player direction: RIGHT
+wall wall wall wall wall
+wall empty ball empty wall
+wall empty ball empty wall
+wall agent empty goal wall
+wall wall wall wall wall
+
+                ",2
+"Player location: (1, 2), Player direction: LEFT
+wall wall wall wall wall
+wall empty agent ball wall
+wall ball empty empty wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",0
+"Player location: (3, 2), Player direction: RIGHT
+wall wall wall wall wall
+wall empty ball empty wall
+wall ball empty empty wall
+wall empty agent goal wall
+wall wall wall wall wall
+
+                ",2
+"Player location: (1, 1), Player direction: DOWN
+wall wall wall wall wall
+wall agent ball empty wall
+wall empty empty empty wall
+wall ball empty goal wall
+wall wall wall wall wall
+
+                ",0
+"Player location: (2, 2), Player direction: UP
+wall wall wall wall wall
+wall empty ball ball wall
+wall empty agent empty wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (2, 1), Player direction: DOWN
+wall wall wall wall wall
+wall empty empty ball wall
+wall agent ball empty wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",0
+"Player location: (1, 3), Player direction: LEFT
+wall wall wall wall wall
+wall ball empty agent wall
+wall empty empty ball wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",2
+"Player location: (2, 2), Player direction: LEFT
+wall wall wall wall wall
+wall ball empty empty wall
+wall empty agent empty wall
+wall empty ball goal wall
+wall wall wall wall wall
+
+                ",2
+"Player location: (3, 1), Player direction: UP
+wall wall wall wall wall
+wall ball empty empty wall
+wall empty empty ball wall
+wall agent empty goal wall
+wall wall wall wall wall
+
+                ",2
+"Player location: (1, 3), Player direction: DOWN
+wall wall wall wall wall
+wall empty empty agent wall
+wall ball empty ball wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",1
+"Player location: (2, 1), Player direction: UP
+wall wall wall wall wall
+wall empty empty empty wall
+wall agent ball empty wall
+wall empty ball goal wall
+wall wall wall wall wall
+
+                ",2
+"Player location: (1, 2), Player direction: LEFT
+wall wall wall wall wall
+wall empty agent empty wall
+wall empty empty ball wall
+wall empty ball goal wall
+wall wall wall wall wall
+
+                ",0
+"Player location: (1, 2), Player direction: RIGHT
+wall wall wall wall wall
+wall empty agent empty wall
+wall ball empty ball wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",2
+"Player location: (1, 3), Player direction: DOWN
+wall wall wall wall wall
+wall ball empty agent wall
+wall ball empty empty wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",2
+"Player location: (2, 1), Player direction: UP
+wall wall wall wall wall
+wall ball ball empty wall
+wall agent empty empty wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",1
+"Player location: (2, 2), Player direction: UP
+wall wall wall wall wall
+wall ball ball empty wall
+wall empty agent empty wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (1, 2), Player direction: LEFT
+wall wall wall wall wall
+wall empty agent empty wall
+wall empty empty empty wall
+wall ball ball goal wall
+wall wall wall wall wall
+
+                ",2
+"Player location: (3, 1), Player direction: DOWN
+wall wall wall wall wall
+wall empty empty empty wall
+wall empty empty ball wall
+wall agent ball goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (3, 1), Player direction: UP
+wall wall wall wall wall
+wall empty empty empty wall
+wall ball empty ball wall
+wall agent empty goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (3, 1), Player direction: UP
+wall wall wall wall wall
+wall empty empty empty wall
+wall empty ball empty wall
+wall agent ball goal wall
+wall wall wall wall wall
+
+                ",2
+"Player location: (1, 3), Player direction: DOWN
+wall wall wall wall wall
+wall ball ball agent wall
+wall empty empty empty wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",2
+"Player location: (3, 1), Player direction: DOWN
+wall wall wall wall wall
+wall ball empty empty wall
+wall empty empty ball wall
+wall agent empty goal wall
+wall wall wall wall wall
+
+                ",0
+"Player location: (1, 1), Player direction: RIGHT
+wall wall wall wall wall
+wall agent ball empty wall
+wall ball empty empty wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",1
+"Player location: (1, 1), Player direction: RIGHT
+wall wall wall wall wall
+wall agent empty empty wall
+wall empty ball ball wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",2
+"Player location: (1, 3), Player direction: DOWN
+wall wall wall wall wall
+wall empty empty agent wall
+wall ball empty empty wall
+wall empty ball goal wall
+wall wall wall wall wall
+
+                ",2
+"Player location: (2, 1), Player direction: DOWN
+wall wall wall wall wall
+wall ball empty ball wall
+wall agent empty empty wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (1, 1), Player direction: UP
+wall wall wall wall wall
+wall agent empty empty wall
+wall empty empty ball wall
+wall empty ball goal wall
+wall wall wall wall wall
+
+                ",1
+"Player location: (2, 3), Player direction: DOWN
+wall wall wall wall wall
+wall ball ball empty wall
+wall empty empty agent wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",2
+"Player location: (1, 2), Player direction: RIGHT
+wall wall wall wall wall
+wall empty agent ball wall
+wall empty empty ball wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",1
+"Player location: (3, 2), Player direction: LEFT
+wall wall wall wall wall
+wall ball empty empty wall
+wall empty ball empty wall
+wall empty agent goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (2, 1), Player direction: DOWN
+wall wall wall wall wall
+wall empty ball empty wall
+wall agent empty ball wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",2
+"Player location: (3, 1), Player direction: DOWN
+wall wall wall wall wall
+wall empty empty empty wall
+wall empty ball ball wall
+wall agent empty goal wall
+wall wall wall wall wall
+
+                ",0
+"Player location: (1, 2), Player direction: DOWN
+wall wall wall wall wall
+wall empty agent ball wall
+wall ball empty empty wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",0
+"Player location: (1, 2), Player direction: DOWN
+wall wall wall wall wall
+wall empty agent ball wall
+wall empty empty ball wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",0
+"Player location: (1, 3), Player direction: RIGHT
+wall wall wall wall wall
+wall empty empty agent wall
+wall empty ball empty wall
+wall ball empty goal wall
+wall wall wall wall wall
+
+                ",1
+"Player location: (1, 3), Player direction: DOWN
+wall wall wall wall wall
+wall empty empty agent wall
+wall empty ball empty wall
+wall empty ball goal wall
+wall wall wall wall wall
+
+                ",2
+"Player location: (2, 3), Player direction: DOWN
+wall wall wall wall wall
+wall empty empty empty wall
+wall ball empty agent wall
+wall empty ball goal wall
+wall wall wall wall wall
+
+                ",2
+"Player location: (2, 2), Player direction: LEFT
+wall wall wall wall wall
+wall empty empty ball wall
+wall empty agent empty wall
+wall empty ball goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (3, 2), Player direction: RIGHT
+wall wall wall wall wall
+wall empty empty empty wall
+wall empty ball ball wall
+wall empty agent goal wall
+wall wall wall wall wall
+
+                ",2
+"Player location: (2, 2), Player direction: UP
+wall wall wall wall wall
+wall ball empty empty wall
+wall ball agent empty wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (1, 1), Player direction: RIGHT
+wall wall wall wall wall
+wall agent empty empty wall
+wall empty ball empty wall
+wall ball empty goal wall
+wall wall wall wall wall
+
+                ",1
+"Player location: (2, 2), Player direction: UP
+wall wall wall wall wall
+wall empty ball empty wall
+wall ball agent empty wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (1, 3), Player direction: DOWN
+wall wall wall wall wall
+wall empty empty agent wall
+wall ball empty empty wall
+wall ball empty goal wall
+wall wall wall wall wall
+
+                ",2
+"Player location: (2, 2), Player direction: UP
+wall wall wall wall wall
+wall empty ball empty wall
+wall empty agent empty wall
+wall ball empty goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (3, 2), Player direction: RIGHT
+wall wall wall wall wall
+wall ball empty empty wall
+wall ball empty empty wall
+wall empty agent goal wall
+wall wall wall wall wall
+
+                ",2
+"Player location: (1, 3), Player direction: DOWN
+wall wall wall wall wall
+wall ball empty agent wall
+wall empty empty empty wall
+wall empty ball goal wall
+wall wall wall wall wall
+
+                ",2
+"Player location: (1, 3), Player direction: LEFT
+wall wall wall wall wall
+wall empty ball agent wall
+wall empty empty empty wall
+wall empty ball goal wall
+wall wall wall wall wall
+
+                ",0
+"Player location: (3, 2), Player direction: UP
+wall wall wall wall wall
+wall empty empty empty wall
+wall empty ball ball wall
+wall empty agent goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (1, 1), Player direction: DOWN
+wall wall wall wall wall
+wall agent ball empty wall
+wall empty ball empty wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",0
+"Player location: (3, 2), Player direction: DOWN
+wall wall wall wall wall
+wall empty empty empty wall
+wall empty empty ball wall
+wall ball agent goal wall
+wall wall wall wall wall
+
+                ",0
+"Player location: (1, 1), Player direction: UP
+wall wall wall wall wall
+wall agent empty empty wall
+wall empty ball empty wall
+wall ball empty goal wall
+wall wall wall wall wall
+
+                ",1
+"Player location: (3, 1), Player direction: RIGHT
+wall wall wall wall wall
+wall ball empty empty wall
+wall empty empty empty wall
+wall agent ball goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (2, 1), Player direction: DOWN
+wall wall wall wall wall
+wall empty empty ball wall
+wall agent empty empty wall
+wall empty ball goal wall
+wall wall wall wall wall
+
+                ",0
+"Player location: (1, 2), Player direction: RIGHT
+wall wall wall wall wall
+wall empty agent empty wall
+wall ball empty empty wall
+wall empty ball goal wall
+wall wall wall wall wall
+
+                ",2
+"Player location: (1, 2), Player direction: DOWN
+wall wall wall wall wall
+wall empty agent empty wall
+wall ball empty empty wall
+wall empty ball goal wall
+wall wall wall wall wall
+
+                ",0
+"Player location: (1, 2), Player direction: DOWN
+wall wall wall wall wall
+wall ball agent ball wall
+wall empty empty empty wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (3, 1), Player direction: UP
+wall wall wall wall wall
+wall empty empty empty wall
+wall ball ball empty wall
+wall agent empty goal wall
+wall wall wall wall wall
+
+                ",1
+"Player location: (2, 3), Player direction: UP
+wall wall wall wall wall
+wall empty ball ball wall
+wall empty empty agent wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (2, 1), Player direction: RIGHT
+wall wall wall wall wall
+wall ball empty empty wall
+wall agent empty ball wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",0
+"Player location: (1, 1), Player direction: DOWN
+wall wall wall wall wall
+wall agent empty empty wall
+wall empty ball empty wall
+wall empty ball goal wall
+wall wall wall wall wall
+
+                ",0
+"Player location: (3, 1), Player direction: RIGHT
+wall wall wall wall wall
+wall empty empty ball wall
+wall ball empty empty wall
+wall agent empty goal wall
+wall wall wall wall wall
+
+                ",0
+"Player location: (1, 1), Player direction: DOWN
+wall wall wall wall wall
+wall agent empty ball wall
+wall empty empty empty wall
+wall empty ball goal wall
+wall wall wall wall wall
+
+                ",0
+"Player location: (1, 2), Player direction: RIGHT
+wall wall wall wall wall
+wall empty agent empty wall
+wall ball empty empty wall
+wall ball empty goal wall
+wall wall wall wall wall
+
+                ",2
+"Player location: (1, 1), Player direction: RIGHT
+wall wall wall wall wall
+wall agent empty ball wall
+wall empty ball empty wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",2
+"Player location: (3, 1), Player direction: UP
+wall wall wall wall wall
+wall ball ball empty wall
+wall empty empty empty wall
+wall agent empty goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (2, 2), Player direction: RIGHT
+wall wall wall wall wall
+wall empty empty empty wall
+wall empty agent empty wall
+wall ball ball goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (1, 2), Player direction: DOWN
+wall wall wall wall wall
+wall empty agent empty wall
+wall empty empty empty wall
+wall ball ball goal wall
+wall wall wall wall wall
+
+                ",2
+"Player location: (3, 2), Player direction: DOWN
+wall wall wall wall wall
+wall ball empty ball wall
+wall empty empty empty wall
+wall empty agent goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (3, 1), Player direction: RIGHT
+wall wall wall wall wall
+wall empty empty empty wall
+wall ball ball empty wall
+wall agent empty goal wall
+wall wall wall wall wall
+
+                ",0
+"Player location: (2, 1), Player direction: LEFT
+wall wall wall wall wall
+wall empty ball empty wall
+wall agent empty empty wall
+wall empty ball goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (1, 2), Player direction: RIGHT
+wall wall wall wall wall
+wall ball agent empty wall
+wall empty empty empty wall
+wall empty ball goal wall
+wall wall wall wall wall
+
+                ",1
+"Player location: (2, 2), Player direction: DOWN
+wall wall wall wall wall
+wall empty empty empty wall
+wall ball agent empty wall
+wall ball empty goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (2, 3), Player direction: RIGHT
+wall wall wall wall wall
+wall empty empty ball wall
+wall empty empty agent wall
+wall empty ball goal wall
+wall wall wall wall wall
+
+                ",1
+"Player location: (2, 3), Player direction: LEFT
+wall wall wall wall wall
+wall empty ball empty wall
+wall empty empty agent wall
+wall ball empty goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (2, 2), Player direction: UP
+wall wall wall wall wall
+wall empty empty empty wall
+wall ball agent ball wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (2, 3), Player direction: LEFT
+wall wall wall wall wall
+wall ball empty empty wall
+wall empty ball agent wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (1, 1), Player direction: UP
+wall wall wall wall wall
+wall agent ball empty wall
+wall empty empty empty wall
+wall ball empty goal wall
+wall wall wall wall wall
+
+                ",1
+"Player location: (1, 3), Player direction: LEFT
+wall wall wall wall wall
+wall empty empty agent wall
+wall empty empty ball wall
+wall ball empty goal wall
+wall wall wall wall wall
+
+                ",0
+"Player location: (3, 1), Player direction: UP
+wall wall wall wall wall
+wall empty empty ball wall
+wall empty empty empty wall
+wall agent ball goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (1, 1), Player direction: DOWN
+wall wall wall wall wall
+wall agent ball empty wall
+wall empty empty ball wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",0
+"Player location: (3, 2), Player direction: RIGHT
+wall wall wall wall wall
+wall empty empty ball wall
+wall ball empty empty wall
+wall empty agent goal wall
+wall wall wall wall wall
+
+                ",2
+"Player location: (1, 2), Player direction: LEFT
+wall wall wall wall wall
+wall empty agent empty wall
+wall empty ball ball wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",2
+"Player location: (2, 1), Player direction: DOWN
+wall wall wall wall wall
+wall empty ball empty wall
+wall agent ball empty wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",2
+"Player location: (1, 1), Player direction: LEFT
+wall wall wall wall wall
+wall agent empty empty wall
+wall ball ball empty wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",0
+"Player location: (1, 3), Player direction: RIGHT
+wall wall wall wall wall
+wall empty empty agent wall
+wall ball ball empty wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",1
+"Player location: (1, 2), Player direction: RIGHT
+wall wall wall wall wall
+wall empty agent ball wall
+wall empty empty empty wall
+wall ball empty goal wall
+wall wall wall wall wall
+
+                ",1
+"Player location: (1, 2), Player direction: RIGHT
+wall wall wall wall wall
+wall empty agent ball wall
+wall ball empty empty wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",1
+"Player location: (3, 1), Player direction: UP
+wall wall wall wall wall
+wall empty empty empty wall
+wall ball empty empty wall
+wall agent ball goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (2, 2), Player direction: DOWN
+wall wall wall wall wall
+wall empty ball empty wall
+wall empty agent empty wall
+wall empty ball goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (1, 3), Player direction: UP
+wall wall wall wall wall
+wall empty empty agent wall
+wall empty ball empty wall
+wall ball empty goal wall
+wall wall wall wall wall
+
+                ",0
+"Player location: (2, 3), Player direction: UP
+wall wall wall wall wall
+wall empty empty empty wall
+wall ball empty agent wall
+wall empty ball goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (2, 1), Player direction: RIGHT
+wall wall wall wall wall
+wall empty empty empty wall
+wall agent ball empty wall
+wall ball empty goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (3, 1), Player direction: UP
+wall wall wall wall wall
+wall empty empty empty wall
+wall empty empty ball wall
+wall agent ball goal wall
+wall wall wall wall wall
+
+                ",2
+"Player location: (1, 3), Player direction: LEFT
+wall wall wall wall wall
+wall empty ball agent wall
+wall empty ball empty wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",0
+"Player location: (1, 2), Player direction: LEFT
+wall wall wall wall wall
+wall ball agent empty wall
+wall ball empty empty wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",0
+"Player location: (2, 1), Player direction: DOWN
+wall wall wall wall wall
+wall ball empty empty wall
+wall agent empty ball wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",2
+"Player location: (1, 2), Player direction: LEFT
+wall wall wall wall wall
+wall empty agent empty wall
+wall ball empty empty wall
+wall empty ball goal wall
+wall wall wall wall wall
+
+                ",0
+"Player location: (2, 2), Player direction: RIGHT
+wall wall wall wall wall
+wall empty empty empty wall
+wall ball agent ball wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (1, 2), Player direction: LEFT
+wall wall wall wall wall
+wall ball agent ball wall
+wall empty empty empty wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (1, 2), Player direction: LEFT
+wall wall wall wall wall
+wall empty agent empty wall
+wall empty empty ball wall
+wall ball empty goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (2, 1), Player direction: DOWN
+wall wall wall wall wall
+wall ball empty empty wall
+wall agent empty empty wall
+wall ball empty goal wall
+wall wall wall wall wall
+
+                ",0
+"Player location: (2, 3), Player direction: DOWN
+wall wall wall wall wall
+wall empty empty empty wall
+wall empty empty agent wall
+wall ball ball goal wall
+wall wall wall wall wall
+
+                ",2
+"Player location: (2, 1), Player direction: DOWN
+wall wall wall wall wall
+wall empty empty empty wall
+wall agent ball empty wall
+wall ball empty goal wall
+wall wall wall wall wall
+
+                ",0
+"Player location: (2, 2), Player direction: DOWN
+wall wall wall wall wall
+wall empty ball empty wall
+wall empty agent ball wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (2, 3), Player direction: DOWN
+wall wall wall wall wall
+wall empty empty empty wall
+wall ball empty agent wall
+wall ball empty goal wall
+wall wall wall wall wall
+
+                ",2
+"Player location: (1, 2), Player direction: DOWN
+wall wall wall wall wall
+wall empty agent empty wall
+wall ball empty ball wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",0
+"Player location: (3, 2), Player direction: RIGHT
+wall wall wall wall wall
+wall empty empty empty wall
+wall ball empty ball wall
+wall empty agent goal wall
+wall wall wall wall wall
+
+                ",2
+"Player location: (2, 2), Player direction: LEFT
+wall wall wall wall wall
+wall empty empty empty wall
+wall empty agent empty wall
+wall ball ball goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (1, 2), Player direction: LEFT
+wall wall wall wall wall
+wall empty agent empty wall
+wall ball empty empty wall
+wall ball empty goal wall
+wall wall wall wall wall
+
+                ",0
+"Player location: (1, 3), Player direction: DOWN
+wall wall wall wall wall
+wall empty ball agent wall
+wall empty empty empty wall
+wall empty ball goal wall
+wall wall wall wall wall
+
+                ",2
+"Player location: (3, 2), Player direction: UP
+wall wall wall wall wall
+wall empty ball empty wall
+wall empty ball empty wall
+wall empty agent goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (3, 2), Player direction: RIGHT
+wall wall wall wall wall
+wall empty ball empty wall
+wall empty ball empty wall
+wall empty agent goal wall
+wall wall wall wall wall
+
+                ",2
+"Player location: (1, 3), Player direction: DOWN
+wall wall wall wall wall
+wall empty ball agent wall
+wall empty empty ball wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",1
+"Player location: (3, 1), Player direction: RIGHT
+wall wall wall wall wall
+wall ball empty empty wall
+wall empty empty ball wall
+wall agent empty goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (1, 3), Player direction: LEFT
+wall wall wall wall wall
+wall ball empty agent wall
+wall empty ball empty wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",0
+"Player location: (1, 2), Player direction: LEFT
+wall wall wall wall wall
+wall empty agent empty wall
+wall ball empty ball wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",2
+"Player location: (2, 1), Player direction: RIGHT
+wall wall wall wall wall
+wall empty ball empty wall
+wall agent empty empty wall
+wall ball empty goal wall
+wall wall wall wall wall
+
+                ",1
+"Player location: (1, 2), Player direction: DOWN
+wall wall wall wall wall
+wall ball agent empty wall
+wall empty empty ball wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",2
+"Player location: (3, 2), Player direction: UP
+wall wall wall wall wall
+wall empty ball ball wall
+wall empty empty empty wall
+wall empty agent goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (1, 1), Player direction: RIGHT
+wall wall wall wall wall
+wall agent empty empty wall
+wall empty ball empty wall
+wall empty ball goal wall
+wall wall wall wall wall
+
+                ",2
+"Player location: (3, 2), Player direction: RIGHT
+wall wall wall wall wall
+wall ball ball empty wall
+wall empty empty empty wall
+wall empty agent goal wall
+wall wall wall wall wall
+
+                ",2
+"Player location: (2, 1), Player direction: DOWN
+wall wall wall wall wall
+wall empty ball ball wall
+wall agent empty empty wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",2
+"Player location: (2, 2), Player direction: UP
+wall wall wall wall wall
+wall empty ball empty wall
+wall empty agent empty wall
+wall empty ball goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (1, 3), Player direction: DOWN
+wall wall wall wall wall
+wall empty ball agent wall
+wall empty ball empty wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",2
+"Player location: (2, 3), Player direction: DOWN
+wall wall wall wall wall
+wall ball empty empty wall
+wall empty ball agent wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",2
+"Player location: (2, 2), Player direction: LEFT
+wall wall wall wall wall
+wall ball ball empty wall
+wall empty agent empty wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (1, 3), Player direction: DOWN
+wall wall wall wall wall
+wall empty empty agent wall
+wall empty empty ball wall
+wall ball empty goal wall
+wall wall wall wall wall
+
+                ",1
+"Player location: (2, 3), Player direction: LEFT
+wall wall wall wall wall
+wall empty empty empty wall
+wall empty ball agent wall
+wall ball empty goal wall
+wall wall wall wall wall
+
+                ",0
+"Player location: (3, 1), Player direction: UP
+wall wall wall wall wall
+wall ball empty ball wall
+wall empty empty empty wall
+wall agent empty goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (3, 1), Player direction: UP
+wall wall wall wall wall
+wall ball empty empty wall
+wall empty ball empty wall
+wall agent empty goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (1, 2), Player direction: DOWN
+wall wall wall wall wall
+wall empty agent ball wall
+wall empty empty empty wall
+wall ball empty goal wall
+wall wall wall wall wall
+
+                ",0
+"Player location: (3, 2), Player direction: RIGHT
+wall wall wall wall wall
+wall ball empty empty wall
+wall empty ball empty wall
+wall empty agent goal wall
+wall wall wall wall wall
+
+                ",2
+"Player location: (3, 1), Player direction: RIGHT
+wall wall wall wall wall
+wall ball empty empty wall
+wall empty ball empty wall
+wall agent empty goal wall
+wall wall wall wall wall
+
+                ",2
+"Player location: (1, 2), Player direction: DOWN
+wall wall wall wall wall
+wall ball agent empty wall
+wall empty empty empty wall
+wall empty ball goal wall
+wall wall wall wall wall
+
+                ",0
+"Player location: (1, 3), Player direction: LEFT
+wall wall wall wall wall
+wall empty empty agent wall
+wall ball ball empty wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",0
+"Player location: (1, 2), Player direction: LEFT
+wall wall wall wall wall
+wall empty agent empty wall
+wall ball ball empty wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",0
+"Player location: (2, 2), Player direction: RIGHT
+wall wall wall wall wall
+wall ball empty empty wall
+wall empty agent empty wall
+wall empty ball goal wall
+wall wall wall wall wall
+
+                ",2
+"Player location: (2, 3), Player direction: LEFT
+wall wall wall wall wall
+wall empty empty ball wall
+wall empty ball agent wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (1, 2), Player direction: RIGHT
+wall wall wall wall wall
+wall empty agent empty wall
+wall empty empty ball wall
+wall empty ball goal wall
+wall wall wall wall wall
+
+                ",2
+"Player location: (1, 3), Player direction: RIGHT
+wall wall wall wall wall
+wall empty empty agent wall
+wall ball empty ball wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",1
+"Player location: (2, 3), Player direction: UP
+wall wall wall wall wall
+wall empty empty empty wall
+wall ball ball agent wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (1, 2), Player direction: RIGHT
+wall wall wall wall wall
+wall empty agent empty wall
+wall empty empty ball wall
+wall ball empty goal wall
+wall wall wall wall wall
+
+                ",2
+"Player location: (3, 1), Player direction: DOWN
+wall wall wall wall wall
+wall empty empty ball wall
+wall empty ball empty wall
+wall agent empty goal wall
+wall wall wall wall wall
+
+                ",0
+"Player location: (3, 1), Player direction: RIGHT
+wall wall wall wall wall
+wall empty empty ball wall
+wall empty empty ball wall
+wall agent empty goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (2, 1), Player direction: RIGHT
+wall wall wall wall wall
+wall empty ball empty wall
+wall agent ball empty wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",0
+"Player location: (3, 1), Player direction: UP
+wall wall wall wall wall
+wall empty ball empty wall
+wall ball empty empty wall
+wall agent empty goal wall
+wall wall wall wall wall
+
+                ",1
+"Player location: (1, 1), Player direction: DOWN
+wall wall wall wall wall
+wall agent empty empty wall
+wall empty ball empty wall
+wall ball empty goal wall
+wall wall wall wall wall
+
+                ",0
+"Player location: (1, 3), Player direction: LEFT
+wall wall wall wall wall
+wall empty empty agent wall
+wall empty ball ball wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",2
+"Player location: (1, 3), Player direction: LEFT
+wall wall wall wall wall
+wall ball empty agent wall
+wall empty empty empty wall
+wall empty ball goal wall
+wall wall wall wall wall
+
+                ",0
+"Player location: (3, 1), Player direction: RIGHT
+wall wall wall wall wall
+wall ball ball empty wall
+wall empty empty empty wall
+wall agent empty goal wall
+wall wall wall wall wall
+
+                ",2
+"Player location: (1, 3), Player direction: RIGHT
+wall wall wall wall wall
+wall empty empty agent wall
+wall empty empty empty wall
+wall ball ball goal wall
+wall wall wall wall wall
+
+                ",1
+"Player location: (2, 3), Player direction: RIGHT
+wall wall wall wall wall
+wall empty empty empty wall
+wall ball empty agent wall
+wall ball empty goal wall
+wall wall wall wall wall
+
+                ",1
+"Player location: (3, 1), Player direction: DOWN
+wall wall wall wall wall
+wall ball empty empty wall
+wall empty empty empty wall
+wall agent ball goal wall
+wall wall wall wall wall
+
+                ",0
+"Player location: (2, 2), Player direction: RIGHT
+wall wall wall wall wall
+wall empty empty ball wall
+wall empty agent empty wall
+wall ball empty goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (1, 2), Player direction: RIGHT
+wall wall wall wall wall
+wall empty agent ball wall
+wall empty ball empty wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",1
+"Player location: (1, 1), Player direction: RIGHT
+wall wall wall wall wall
+wall agent empty ball wall
+wall empty empty ball wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",2
+"Player location: (1, 1), Player direction: LEFT
+wall wall wall wall wall
+wall agent empty empty wall
+wall empty ball empty wall
+wall ball empty goal wall
+wall wall wall wall wall
+
+                ",0
+"Player location: (2, 2), Player direction: RIGHT
+wall wall wall wall wall
+wall empty ball empty wall
+wall ball agent empty wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (1, 2), Player direction: DOWN
+wall wall wall wall wall
+wall empty agent empty wall
+wall empty ball empty wall
+wall empty ball goal wall
+wall wall wall wall wall
+
+                ",0
+"Player location: (1, 1), Player direction: LEFT
+wall wall wall wall wall
+wall agent empty ball wall
+wall empty empty empty wall
+wall empty ball goal wall
+wall wall wall wall wall
+
+                ",0
+"Player location: (1, 3), Player direction: LEFT
+wall wall wall wall wall
+wall empty ball agent wall
+wall ball empty empty wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",0
+"Player location: (2, 1), Player direction: RIGHT
+wall wall wall wall wall
+wall empty empty empty wall
+wall agent ball empty wall
+wall empty ball goal wall
+wall wall wall wall wall
+
+                ",1
+"Player location: (1, 1), Player direction: RIGHT
+wall wall wall wall wall
+wall agent empty empty wall
+wall ball ball empty wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",2
+"Player location: (3, 1), Player direction: DOWN
+wall wall wall wall wall
+wall empty ball empty wall
+wall empty ball empty wall
+wall agent empty goal wall
+wall wall wall wall wall
+
+                ",0
+"Player location: (3, 2), Player direction: LEFT
+wall wall wall wall wall
+wall empty empty empty wall
+wall ball ball empty wall
+wall empty agent goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (1, 3), Player direction: DOWN
+wall wall wall wall wall
+wall empty empty agent wall
+wall ball ball empty wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",2
+"Player location: (2, 3), Player direction: DOWN
+wall wall wall wall wall
+wall empty ball empty wall
+wall ball empty agent wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",2
+"Player location: (2, 3), Player direction: LEFT
+wall wall wall wall wall
+wall empty empty empty wall
+wall empty ball agent wall
+wall empty ball goal wall
+wall wall wall wall wall
+
+                ",0
+"Player location: (2, 3), Player direction: LEFT
+wall wall wall wall wall
+wall ball empty empty wall
+wall ball empty agent wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (3, 1), Player direction: RIGHT
+wall wall wall wall wall
+wall empty ball ball wall
+wall empty empty empty wall
+wall agent empty goal wall
+wall wall wall wall wall
+
+                ",0
+"Player location: (2, 2), Player direction: RIGHT
+wall wall wall wall wall
+wall empty empty ball wall
+wall empty agent empty wall
+wall empty ball goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (1, 3), Player direction: RIGHT
+wall wall wall wall wall
+wall empty empty agent wall
+wall empty empty ball wall
+wall ball empty goal wall
+wall wall wall wall wall
+
+                ",1
+"Player location: (1, 1), Player direction: DOWN
+wall wall wall wall wall
+wall agent empty empty wall
+wall ball ball empty wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",0
+"Player location: (1, 1), Player direction: UP
+wall wall wall wall wall
+wall agent ball empty wall
+wall empty empty ball wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",1
+"Player location: (1, 3), Player direction: RIGHT
+wall wall wall wall wall
+wall ball empty agent wall
+wall empty empty empty wall
+wall ball empty goal wall
+wall wall wall wall wall
+
+                ",1
+"Player location: (1, 2), Player direction: RIGHT
+wall wall wall wall wall
+wall ball agent empty wall
+wall empty empty empty wall
+wall ball empty goal wall
+wall wall wall wall wall
+
+                ",2
+"Player location: (1, 3), Player direction: RIGHT
+wall wall wall wall wall
+wall empty empty agent wall
+wall ball empty empty wall
+wall empty ball goal wall
+wall wall wall wall wall
+
+                ",1
+"Player location: (3, 1), Player direction: UP
+wall wall wall wall wall
+wall empty ball empty wall
+wall empty empty ball wall
+wall agent empty goal wall
+wall wall wall wall wall
+
+                ",1
+"Player location: (2, 1), Player direction: RIGHT
+wall wall wall wall wall
+wall empty empty empty wall
+wall agent empty ball wall
+wall empty ball goal wall
+wall wall wall wall wall
+
+                ",1
+"Player location: (2, 2), Player direction: UP
+wall wall wall wall wall
+wall empty empty ball wall
+wall empty agent empty wall
+wall ball empty goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (1, 1), Player direction: UP
+wall wall wall wall wall
+wall agent empty ball wall
+wall empty empty ball wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",1
+"Player location: (1, 3), Player direction: LEFT
+wall wall wall wall wall
+wall empty empty agent wall
+wall ball empty ball wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",0
+"Player location: (3, 1), Player direction: RIGHT
+wall wall wall wall wall
+wall empty empty ball wall
+wall empty empty empty wall
+wall agent ball goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (1, 2), Player direction: RIGHT
+wall wall wall wall wall
+wall empty agent empty wall
+wall empty ball empty wall
+wall ball empty goal wall
+wall wall wall wall wall
+
+                ",2
+"Player location: (1, 2), Player direction: RIGHT
+wall wall wall wall wall
+wall empty agent empty wall
+wall ball ball empty wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",2
+"Player location: (3, 2), Player direction: RIGHT
+wall wall wall wall wall
+wall ball empty empty wall
+wall empty empty ball wall
+wall empty agent goal wall
+wall wall wall wall wall
+
+                ",2
+"Player location: (2, 1), Player direction: DOWN
+wall wall wall wall wall
+wall empty empty empty wall
+wall agent ball ball wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",0
+"Player location: (2, 2), Player direction: RIGHT
+wall wall wall wall wall
+wall ball empty empty wall
+wall ball agent empty wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (1, 3), Player direction: RIGHT
+wall wall wall wall wall
+wall ball empty agent wall
+wall empty ball empty wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",1
+"Player location: (1, 2), Player direction: UP
+wall wall wall wall wall
+wall empty agent empty wall
+wall ball empty empty wall
+wall empty ball goal wall
+wall wall wall wall wall
+
+                ",1
+"Player location: (3, 1), Player direction: RIGHT
+wall wall wall wall wall
+wall empty empty ball wall
+wall empty ball empty wall
+wall agent empty goal wall
+wall wall wall wall wall
+
+                ",2
+"Player location: (2, 2), Player direction: LEFT
+wall wall wall wall wall
+wall empty empty empty wall
+wall empty agent ball wall
+wall empty ball goal wall
+wall wall wall wall wall
+
+                ",-1
+"Player location: (1, 2), Player direction: RIGHT
+wall wall wall wall wall
+wall ball agent empty wall
+wall ball empty empty wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",2
+"Player location: (1, 3), Player direction: LEFT
+wall wall wall wall wall
+wall ball ball agent wall
+wall empty empty empty wall
+wall empty empty goal wall
+wall wall wall wall wall
+
+                ",0
+"Player location: (1, 1), Player direction: UP
+wall wall wall wall wall
+wall agent ball empty wall
+wall empty empty empty wall
+wall empty ball goal wall
+wall wall wall wall wall
+
+                ",1
