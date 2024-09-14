@@ -73,12 +73,11 @@ lines to paste in main for each map to policy runner:
 game = GameQlearning(gym.make("MiniGrid-Dynamic-Obstacles-5x5-v0", render_mode="human"), policy_file="qTable/StochasticPolicy.csv")
 game = GameQlearning(env=maps.LavaMazeEnv(render_mode="human"), policy_file="qTable/lavaPolicy.csv")
 game = GameQlearning(env=maps.MazeEnv(render_mode="human"), policy_file="qTable/mazePolicy.csv")
-3. Configure the main in rl_game.py to load the policy as well as its map.
-**Note:** The policy file should be in the same directory as the rl_game.py file.
-4. Run the following command:
+3. Configure the main in rl/game.py to load the policy as well as its map.
+4. cd to rl directory, and run the following command:
 
 ```bash 
-python rl_game.py
+python game.py
 ```
 Then you can set the map of the game by modifying the __main__ function.
 ## Acknowledgments
